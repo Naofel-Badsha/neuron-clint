@@ -62,10 +62,10 @@ const AdmissionForm = () => {
   };
 
   return (
-    <div className="max-w-screen-xl mx-auto pop mt-10">
+    <div className="max-w-screen-xl mx-auto pop mt-10 px-2">
       <form
         onSubmit={handleSubmitForm}
-        className="card-body border-4 border-orange-600 shadow-md rounded-lg lg:p-20 md:p-20 px-12"
+        className="p-3 border-4 border-orange-600 shadow-md rounded-lg "
       >
         
         <h3 className="font-semibold text-lg md:text-2xl flex gap-2 items-center text-green-900">
@@ -74,9 +74,9 @@ const AdmissionForm = () => {
         </h3>
 
         {/*----------Section---------1--------*/}
-        <div className="grid lg:gap-16 md:gap-14  gap-3   lg:grid-cols-2 py-3">
+        <div className="grid lg:gap-16 md:gap-14 gap-3 lg:grid-cols-2 py-3">
           {/*----------Inpot-----1--------*/}
-          <div className="form-control">
+          <div className="form-control ">
             <label className="label">
               <span className="label-text text-xl">Name</span>
             </label>
