@@ -111,16 +111,16 @@ const Navbar = () => {
       </ul>
     </Box>
   );
-
+  // bg-white sticky inset-0 z-10  w-full max-w-full rounded-none border  bg-opacity-30 py-2 px-4 text-black shadow-md backdrop-blur-2xl backdrop-saturate-200 lg:px-2 lg:py-2
   return (
-    <div className="flex items-center justify-between z-50 max-w-screen-xl mx-auto py-2 banglahed">
+    <div className="flex items-center justify-between  z-50 max-w-screen-xl mx-auto py-2 banglahed">
       {/* Navbar start */}
       <div className="flex items-center justify-between w-full">
         {/* Logo */}
-        <div className="">
+        <div className="ml-4">
           <Link to={"/"}>
             {" "}
-            <div className="flex justify-center items-center gap-2 ml-8">
+            <div className="flex justify-center items-center gap-2">
               <img src={Logo} className="w-[60px]" alt="Logo" />
               <div>
                 <p className="tracking-wider text-4xl font-bold bg-clip-text text-transparent bg-custom-bg">
@@ -144,7 +144,7 @@ const Navbar = () => {
       </div>
 
       {/* Main navigation */}
-      <div className=" flex gap-4">
+      <div className=" flex gap-4 ml-4">
         <div className="hidden lg:flex">
           <ul className="flex font-semibold items-center">
             {/* Navigation Links for Desktop */}

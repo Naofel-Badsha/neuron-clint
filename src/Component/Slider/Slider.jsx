@@ -46,7 +46,7 @@ const Slider = () => {
           <div className="ease-linear duration-500 flex transform-gpu" style={{ transform: `translateX(-${currentSlider * 100}%)`}}>
             {/* sliders */}
             {carouselImages.map((slide, inx) => (
-            <img key={slide.image} src={slide.image} className="min-w-full  bg-black/20 h-[500px]  md:h-[7500px] lg:h-[760px]" alt={`Slider - ${inx + 1}`}/>
+            <img key={slide.image} src={slide.image} className="min-w-full  bg-black/20 h-[500px]  md:h-[750px] lg:h-[760px]" alt={`Slider - ${inx + 1}`}/>
             ))}
           </div>
       </div>

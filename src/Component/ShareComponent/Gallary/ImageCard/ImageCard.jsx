@@ -29,7 +29,7 @@ const ImageCard = ({ item }) => {
         >
           <img
             src={image}
-            className="w-full h-[260px] object-cover bg-inherit hover:opacity-05 cursor-pointer"
+            className="w-full h-[260px] border-2 border-gray-700 object-cover bg-inherit hover:opacity-05 cursor-pointer"
           />
         </div>
       </div>

@@ -115,7 +115,6 @@ const router = createBrowserRouter([
         path: "/admition",
         element:<AdmissionForm></AdmissionForm>,
       },
-
       {
         path: "/view/:id",  // Dynamic route to match user ID
         element:<Details></Details>,  // Component to display user details
@@ -135,19 +134,7 @@ const router = createBrowserRouter([
       {
         path: "/UpdateContest/:id",  // Dynamic route to match user ID
         element:<UpdateContest></UpdateContest>,  // Component to display user details
-      },
-      
-      
-      
-    
-      
-     
-    
-   
-    
-     
-     
-     
+      }, 
     ],
     errorElement: <Error></Error>,
   },
@@ -178,36 +165,26 @@ const router = createBrowserRouter([
         element:<UpdateSlidersimg></UpdateSlidersimg>,
 
       },
-
       {
         path: "ManageBook",
         element: <ManageBook></ManageBook>
       },
-
-      
       {
         path: "Addbook",
         element: <AddBook></AddBook>
       },
-      
-      
       {
         path: "AddSuccessfulstudents",
         element: <AddSuccessfulstudents></AddSuccessfulstudents>
       },
-
-      
       {
         path: "ManageSuccessfulstudents",
         element: <ManageSuccessfulstudents></ManageSuccessfulstudents>
       },
-
-       
       {
         path: "Slidersimgsmoll",
         element: <Slidersimgsmoll></Slidersimgsmoll>
       },
-      
       {
         path: "AddImage",
         element: <AddImage></AddImage>
@@ -216,43 +193,34 @@ const router = createBrowserRouter([
         path: "ManageImage",
         element: <ManageImage></ManageImage>
       },
-      
       {
         path: "AddVedio",
         element: <AddYoutubevdio></AddYoutubevdio>
       },
-      
       {
         path: "ManageVedio",
         element: <ManageVedio></ManageVedio>
       },
-      
       {
         path: "AddHeadline",
         element: <AddHeadline></AddHeadline>
       },
-      
-      
       {
         path: "ManageHeadline",
         element: <ManageHeadline></ManageHeadline>
       },
-      
       {
         path: "AdmitionRequest",
         element: <AdmissionRequest></AdmissionRequest>
       },
-      
       {
         path: "Admitioncomplete",
         element: <Admitioncomplete></Admitioncomplete>
       },
-
       {
         path: "BookbuyRequest",
         element: <BookBuyRequest></BookBuyRequest>
       },
-      
       {
         path: "BookbuyComplate",
         element: <BookBuyComplate></BookBuyComplate>
@@ -261,46 +229,24 @@ const router = createBrowserRouter([
         path: "AddSuccessStory",
         element: <AddSuccessStory></AddSuccessStory>
       },
-      
       {
         path: "ManageSuccessStory",
         element: <ManageSuccessStory></ManageSuccessStory>
       },
-      
       {
         path: "AddBranch",
         element: <AddBranch></AddBranch>
       },
-      
-      
       {
         path: "ManageBranch",
         element: <ManageBranch></ManageBranch>
       },
-  
-      
-      
-      
-      
-      
-    
-    
-      ////-----------Admin---------
-      {
+    ////-----------Admin---------
+     {
         path: "ManageUser",
         element:<ManageUser></ManageUser>,
       },
-     
-     
-
-
-      ///----------user ---------
-     
-     
-    
-  
-     
-     
+    ///----------user ---------
     ],
     errorElement: <Error></Error>,
   },

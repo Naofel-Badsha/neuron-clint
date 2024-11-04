@@ -27,17 +27,25 @@ const Bookcontenar = () => {
   }, [Image]);
 
   const filterItem = (categoryItem) => {
-    const updatedItems = Image.filter((carElem) => carElem.category === categoryItem);
+    const updatedItems = Image.filter(
+      (carElem) => carElem.category === categoryItem
+    );
     setItems(updatedItems);
   };
 
   return (
     <div className="max-w-screen-xl mx-auto my-4">
-      <div className="mt-14 ">
-        <h2 className="text-center text-4xl font-bold">
+      {/*==============Heading================*/}
+      <div className="">
+        <h2 className="text-center text-4xl text-[#333333] font-bold mt-8">
           আমাদের <span className="text-custom-bg">বইসমূহ</span>
         </h2>
+        <div className="flex w-16 m-auto">
+          <span className="w-8 h-[4px] bg-[#333333]"></span>
+          <span className="w-8 h-[4px] bg-custom-bg "></span>
+        </div>
       </div>
+
       <div>
         <div className="flex flex-wrap gap-6 py-10 justify-center">
           <button
@@ -50,7 +58,7 @@ const Bookcontenar = () => {
             className="px-5 pb-4 pt-5 text-black hover:text-white bg-slate-200 hover:bg-slate-700 cursor-pointer focus:bg-[#ff4a4a] focus:text-white text-2xl rounded-xl"
             onClick={() => filterItem("akadami")}
           >
-             একাডেমিক বই
+            একাডেমিক বই
           </button>
           <button
             className="px-5 pb-4 pt-5 text-black hover:text-white bg-slate-200 hover:bg-slate-700 cursor-pointer focus:bg-[#ff4a4a] focus:text-white text-2xl rounded-xl"
@@ -62,7 +70,7 @@ const Bookcontenar = () => {
             className="px-5 pb-4 pt-5 text-black hover:text-white bg-slate-200 hover:bg-slate-700 cursor-pointer focus:bg-[#ff4a4a] focus:text-white text-2xl rounded-xl"
             onClick={() => filterItem("admission")}
           >
-             এডমিশন  বই
+            এডমিশন বই
           </button>
         </div>
         <div className="grid gap-2 md:grid-cols-3 lg:grid-cols-4">

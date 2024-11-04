@@ -20,7 +20,7 @@ const Details = () => {
   if (error) return <p>Error loading user details</p>;
 
   return (
-    <div className="max-w-4xl mx-auto my-10 p-6 bg-white shadow-md rounded-lg">
+    <div className="max-w-4xl  mx-auto my-10 p-6 bg-white shadow-md rounded-lg">
     <h1 className="text-2xl font-bold mb-4 text-center">User Details</h1>
     
     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

@@ -1,7 +1,5 @@
 import AdminMenu from "../AdminMenu/AdminMenu";
-
 import { GiHamburgerMenu } from "react-icons/gi";
-
 import useRole from "../../hooks/useRole";
 
 const Menubar = () => {

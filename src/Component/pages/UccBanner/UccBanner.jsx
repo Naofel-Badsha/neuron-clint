@@ -8,7 +8,7 @@ const UccBanner = () => {
   }, []);
   return (
     <div className="m-auto">
-      <div className="carousel-item relative w-full">
+      <div className="carousel-item relative w-full mt-10">
         <img
           src={Benar}
           className="w-full h-[400px] object-cover"

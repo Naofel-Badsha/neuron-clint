@@ -33,15 +33,23 @@ const Bookcontenarhome = () => {
 
   return (
     <div className="container m-auto my-4 p-4 ">
-      <div className="mt-6">
-        <h2 className="text-center text-3xl md:text-5xl font-bold">
-          আমাদের <span className="text-custom-bg">বইসমূহ</span>
-        </h2>
+      <div className="py-6">
+        {/*==============Heading================*/}
+        <div className="">
+          <h2 className="text-center text-5xl text-[#333333] font-bold mt-8">
+            আমাদের<span className="text-custom-bg">বইসমূহ</span>
+          </h2>
+          <div className="flex w-20 m-auto">
+            <span className="w-10 h-[4px] bg-[#333333]"></span>
+            <span className="w-10 h-[4px] bg-custom-bg "></span>
+          </div>
+        </div>
       </div>
+
       <div>
-        <div className="flex flex-wrap  gap-3 md:gap-6 py-10 justify-center">
+        <div className="flex flex-wrap gap-3 md:gap-6 py-10 justify-center">
           <button
-            className=" px-4 md:px-5 pb-2 md:pb-4 pt-3 md:pt-5 text-white hover:text-white bg-slate-600 hover:bg-slate-700 cursor-pointer focus:bg-[#ff4a4a] focus:text-white text-2xl rounded-xl"
+            className="px-4 md:px-5 pb-2 md:pb-4 pt-3 md:pt-5 text-white hover:text-white bg-slate-600 hover:bg-slate-700 cursor-pointer focus:bg-[#ff4a4a] focus:text-white text-2xl rounded-xl"
             onClick={() => setItems(Image)}
           >
             All
@@ -50,23 +58,22 @@ const Bookcontenarhome = () => {
             className="px-4 md:px-5 pb-2 md:pb-4 pt-3 md:pt-5 text-white hover:text-white bg-slate-600 hover:bg-slate-700 cursor-pointer focus:bg-[#ff4a4a] focus:text-white text-2xl rounded-xl"
             onClick={() => filterItem("akadami")}
           >
-             একাডেমিক 
-           
+            একাডেমিক
           </button>
           <button
             className="px-4 md:px-5 pb-2 md:pb-4 pt-3 md:pt-5 text-white hover:text-white bg-slate-600 hover:bg-slate-700 cursor-pointer focus:bg-[#ff4a4a] focus:text-white text-2xl rounded-xl"
             onClick={() => filterItem("niyog")}
           >
-            নিয়োগ 
+            নিয়োগ
           </button>
           <button
             className="px-4 md:px-5 pb-2 md:pb-4 pt-3 md:pt-5 text-white hover:text-white bg-slate-600 hover:bg-slate-700 cursor-pointer focus:bg-[#ff4a4a] focus:text-white text-2xl rounded-xl"
             onClick={() => filterItem("admission")}
           >
-            এডমিশন 
+            এডমিশন
           </button>
         </div>
-        <div className="grid gap-2 md:grid-cols-3 lg:grid-cols-4">
+        <div className="grid gap-6 md:grid-cols-3 lg:grid-cols-4">
           {items.slice(0, 4).map((item) => (
             <Bookcard key={item.id} item={item}></Bookcard>
           ))}

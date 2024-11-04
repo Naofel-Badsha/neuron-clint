@@ -31,21 +31,28 @@ const ImagesGallery = () => {
 
   // Filter items based on category
   const filterItem = (categorItem) => {
-    const updateItems = Image.filter((carElem) => carElem.category === categorItem);
+    const updateItems = Image.filter(
+      (carElem) => carElem.category === categorItem
+    );
     setItems(updateItems);
   };
 
   return (
     <div className="container m-auto  px-1">
-      <div className="mt-8 ">
-        <h2 className="text-center text-4xl font-bold">
+      {/*==============Heading================*/}
+      <div className="pb-10 mt-16">
+        <h2 className="text-center text-4xl text-[#333333] font-bold mt-8">
           ফটো <span className="text-custom-bg">গ্যালারি</span>
         </h2>
+        <div className="flex w-16 m-auto">
+          <span className="w-8 h-[4px] bg-[#333333]"></span>
+          <span className="w-8 h-[4px] bg-custom-bg "></span>
+        </div>
       </div>
 
       <div>
         {/* Filter Buttons */}
-        <div className="flex flex-wrap  gap-3 md:gap-6 py-10">
+        <div className="flex flex-wrap gap-6 md:gap-6 py-10">
           <button
             className="px-4 md:px-5 pb-2 md:pb-4 pt-3 md:pt-5 text-white hover:text-white bg-slate-600  rounded-md hover:bg-custom-bg cursor-pointer focus:bg-[#ff4a4a] focus:text-white text-2xl"
             onClick={() => setItems(Image)}
@@ -54,32 +61,32 @@ const ImagesGallery = () => {
           </button>
           <button
             className="px-4 md:px-5 pb-2 md:pb-4 pt-3 md:pt-5 text-white hover:text-white bg-slate-600  rounded-md hover:bg-custom-bg cursor-pointer focus:bg-[#ff4a4a] focus:text-white text-2xl"
-            onClick={() => filterItem('success')}
+            onClick={() => filterItem("success")}
           >
             Success
           </button>
           <button
             className="px-4 md:px-5 pb-2 md:pb-4 pt-3 md:pt-5 text-white hover:text-white bg-slate-600  rounded-md hover:bg-custom-bg cursor-pointer focus:bg-[#ff4a4a] focus:text-white text-2xl"
-            onClick={() => filterItem('campus')}
+            onClick={() => filterItem("campus")}
           >
             Campus
           </button>
           <button
             className="px-4 md:px-5 pb-2 md:pb-4 pt-3 md:pt-5 text-white hover:text-white bg-slate-600  rounded-md hover:bg-custom-bg cursor-pointer focus:bg-[#ff4a4a] focus:text-white text-2xl"
-            onClick={() => filterItem('students')}
+            onClick={() => filterItem("students")}
           >
             Students
           </button>
           <button
             className="px-4 md:px-5 pb-2 md:pb-4 pt-3 md:pt-5 text-white hover:text-white bg-slate-600  rounded-md hover:bg-custom-bg cursor-pointer focus:bg-[#ff4a4a] focus:text-white text-2xl"
-            onClick={() => filterItem('others')}
+            onClick={() => filterItem("others")}
           >
             Others
           </button>
         </div>
 
         {/* Image Gallery */}
-        <div className="grid gap-2 md:grid-cols-3 lg:grid-cols-4">
+        <div className="grid gap-6 md:grid-cols-3 lg:grid-cols-4">
           {items.map((item) => (
             <ImageCard key={item.id} item={item} />
           ))}

@@ -1,15 +1,19 @@
-import { Navigate } from 'react-router-dom'
+import { Navigate } from "react-router-dom";
 
-import useRole from '../../../hooks/useRole'
-
+import useRole from "../../../hooks/useRole";
 
 const AdminRoute = ({ children }) => {
-  const [role, isLoading] = useRole()
+  const [role, isLoading] = useRole();
 
-  if (isLoading) return <div className="flex w-full justify-center items-center"><div className="w-24 h-24 animate-[spin_2s_linear_infinite] rounded-full border-8 border-dotted border-sky-600"></div></div>
+  if (isLoading)
+    return (
+      <div className="flex w-full justify-center items-center">
+        <div className="w-24 h-24 animate-[spin_2s_linear_infinite] rounded-full border-8 border-dotted border-sky-600"></div>
+      </div>
+    );
 
-  if (role === 'Admin') return children
-  return <Navigate to='/' />
-}
+  if (role === "Admin") return children;
+  return <Navigate to="/" />;
+};
 
-export default AdminRoute
+export default AdminRoute;

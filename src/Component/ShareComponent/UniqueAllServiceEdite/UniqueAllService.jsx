@@ -1,6 +1,6 @@
 import { useEffect } from "react";
-import 'aos/dist/aos.css'; // Import AOS styles
-import AOS from 'aos'; // Import AOS for animations
+import "aos/dist/aos.css"; // Import AOS styles
+import AOS from "aos"; // Import AOS for animations
 
 const UniqueAllService = () => {
   useEffect(() => {
@@ -9,13 +9,23 @@ const UniqueAllService = () => {
 
   return (
     <div className="mx-6 m-auto py-16">
-      <h2 className="text-4xl text-black font-bold text-center py-10" data-aos="zoom-in">
-        অনন্য সব <span className="text-custom-bg">সেবা পরিক্রমা</span>
-      </h2>
+      {/*==============Heading================*/}
+      <div className="pb-10 mb-10">
+        <h2 className="text-center text-5xl text-[#333333] font-bold mt-8">
+          অনন্য সব <span className="text-custom-bg">সেবা পরিক্রমা</span>
+        </h2>
+        <div className="flex w-16 m-auto">
+          <span className="w-8 h-[4px] bg-[#333333]"></span>
+          <span className="w-8 h-[4px] bg-custom-bg "></span>
+        </div>
+      </div>
 
       <div className="grid gap-8 md:grid-cols-1 lg:grid-cols-4">
         {/*-----------1-------------*/}
-        <div className="rounded-[30px] bg-[#f9f1f1] py-10 hover:-translate-y-2 duration-150 shadow-sm hover:shadow-lg shadow-custom-bg" data-aos="zoom-in">
+        <div
+          className="rounded-[30px] bg-[#f9f1f1] py-10 hover:-translate-y-2 duration-150 shadow-sm hover:shadow-lg shadow-custom-bg"
+          data-aos="zoom-in"
+        >
           <div>
             <img
               src="https://i.ibb.co.com/ft0f1nw/open-book-1.png"
@@ -29,7 +39,10 @@ const UniqueAllService = () => {
         </div>
 
         {/*-----------2-------------*/}
-        <div className="rounded-[30px] bg-[#f9f1f1] py-10 hover:-translate-y-2 duration-150 shadow-sm hover:shadow-lg shadow-custom-bg" data-aos="zoom-in">
+        <div
+          className="rounded-[30px] bg-[#f9f1f1] py-10 hover:-translate-y-2 duration-150 shadow-sm hover:shadow-lg shadow-custom-bg"
+          data-aos="zoom-in"
+        >
           <div>
             <img
               src="https://i.ibb.co.com/BVyKMRB/teaching.png"
@@ -43,7 +56,10 @@ const UniqueAllService = () => {
         </div>
 
         {/*-----------3-------------*/}
-        <div className="rounded-[30px] bg-[#f9f1f1] py-10 hover:-translate-y-2 duration-150 shadow-sm hover:shadow-lg shadow-custom-bg" data-aos="zoom-in">
+        <div
+          className="rounded-[30px] bg-[#f9f1f1] py-10 hover:-translate-y-2 duration-150 shadow-sm hover:shadow-lg shadow-custom-bg"
+          data-aos="zoom-in"
+        >
           <div>
             <img
               src="https://i.ibb.co.com/NCvjJWg/writing.png"
@@ -57,7 +73,10 @@ const UniqueAllService = () => {
         </div>
 
         {/*-----------4-------------*/}
-        <div className="rounded-[30px] bg-[#f9f1f1] py-10 hover:-translate-y-2 duration-150 shadow-sm hover:shadow-lg shadow-custom-bg" data-aos="zoom-in">
+        <div
+          className="rounded-[30px] bg-[#f9f1f1] py-10 hover:-translate-y-2 duration-150 shadow-sm hover:shadow-lg shadow-custom-bg"
+          data-aos="zoom-in"
+        >
           <div>
             <img
               src="https://i.ibb.co.com/KLVJ7V8/presentation.png"
@@ -71,7 +90,10 @@ const UniqueAllService = () => {
         </div>
 
         {/*-----------5-------------*/}
-        <div className="rounded-[30px] bg-[#f9f1f1] py-10 hover:-translate-y-2 duration-150 shadow-sm hover:shadow-lg shadow-custom-bg" data-aos="zoom-in">
+        <div
+          className="rounded-[30px] bg-[#f9f1f1] py-10 hover:-translate-y-2 duration-150 shadow-sm hover:shadow-lg shadow-custom-bg"
+          data-aos="zoom-in"
+        >
           <div>
             <img
               src="https://i.ibb.co.com/NN8CS4s/document.png"
@@ -85,7 +107,10 @@ const UniqueAllService = () => {
         </div>
 
         {/*-----------6-------------*/}
-        <div className="rounded-[30px] bg-[#f9f1f1] py-10 hover:-translate-y-2 duration-150 shadow-sm hover:shadow-lg shadow-custom-bg" data-aos="zoom-in">
+        <div
+          className="rounded-[30px] bg-[#f9f1f1] py-10 hover:-translate-y-2 duration-150 shadow-sm hover:shadow-lg shadow-custom-bg"
+          data-aos="zoom-in"
+        >
           <div>
             <img
               src="https://i.ibb.co.com/vPPxq3b/chat.png"
@@ -99,7 +124,10 @@ const UniqueAllService = () => {
         </div>
 
         {/*-----------7-------------*/}
-        <div className="rounded-[30px] bg-[#f9f1f1] py-10 hover:-translate-y-2 duration-150 shadow-sm hover:shadow-lg shadow-custom-bg" data-aos="zoom-in">
+        <div
+          className="rounded-[30px] bg-[#f9f1f1] py-10 hover:-translate-y-2 duration-150 shadow-sm hover:shadow-lg shadow-custom-bg"
+          data-aos="zoom-in"
+        >
           <div>
             <img
               src="https://i.ibb.co.com/qNtyqT2/exam.png"
@@ -113,7 +141,10 @@ const UniqueAllService = () => {
         </div>
 
         {/*-----------8-------------*/}
-        <div className="rounded-[30px] bg-[#f9f1f1] py-10 hover:-translate-y-2 duration-150 shadow-sm hover:shadow-lg shadow-custom-bg" data-aos="zoom-in">
+        <div
+          className="rounded-[30px] bg-[#f9f1f1] py-10 hover:-translate-y-2 duration-150 shadow-sm hover:shadow-lg shadow-custom-bg"
+          data-aos="zoom-in"
+        >
           <div>
             <img
               src="https://i.ibb.co.com/WW38nwx/best.png"

@@ -2,11 +2,10 @@ import { FaPhoneAlt } from "react-icons/fa";
 import { toast } from "react-toastify";
 
 const AdmissionForm = () => {
- 
   const handleSubmitForm = async (event) => {
     event.preventDefault();
     const form = event.target;
-  
+
     const submitFrom = {
       name: form.name.value,
       banglaName: form.banglaName.value,
@@ -35,37 +34,46 @@ const AdmissionForm = () => {
       courseType: form.courseType.value,
       Corsename: form.Corsename.value,
     };
-  
+
     console.log(submitFrom);
-  
+
     try {
-      const response = await fetch(`${import.meta.env.VITE_API_URL}/Add/Admition`, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(submitFrom),
-      });
-  
+      const response = await fetch(
+        `${import.meta.env.VITE_API_URL}/Add/Admition`,
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(submitFrom),
+        }
+      );
+
       if (response.ok) {
-        toast.success('Requst successfully');
+        toast.success("Requst successfully");
         form.reset(); // Reset the form fields after submission
       } else {
-        toast.error('Error Send Requst');
+        toast.error("Error Send Requst");
       }
     } catch (error) {
-      console.error('Error submitting form:', error);
-      toast.error('Error Send Requst');
+      console.error("Error submitting form:", error);
+      toast.error("Error Send Requst");
     }
   };
-  
 
   return (
-    <div className="max-w-screen-xl mx-auto pop">
-      <form onSubmit={handleSubmitForm} className="card-body shadow-md rounded-s-lg lg:p-20 md:p-20 px-12">
-        {/*----------Section---------1--------*/}
+    <div className="max-w-screen-xl mx-auto pop mt-10">
+      <form
+        onSubmit={handleSubmitForm}
+        className="card-body border-4 border-orange-600 shadow-md rounded-lg lg:p-20 md:p-20 px-12"
+      >
+        
+        <h3 className="font-semibold text-lg md:text-2xl flex gap-2 items-center text-green-900">
+          Online Admission Helpline: <FaPhoneAlt className="text-lg" />
+          01730577236{" "}
+        </h3>
 
-        <h3 className="font-semibold text-lg md:text-2xl flex gap-2 items-center text-green-900">Online Admission Helpline: <FaPhoneAlt className="text-lg" />01730577236 </h3>
+        {/*----------Section---------1--------*/}
         <div className="grid lg:gap-16 md:gap-14  gap-3   lg:grid-cols-2 py-3">
           {/*----------Inpot-----1--------*/}
           <div className="form-control">
@@ -125,7 +133,6 @@ const AdmissionForm = () => {
           </div>
         </div>
 
-
         {/*----------Section---------3--------*/}
         <div className="grid lg:gap-16 md:gap-14  gap-3   lg:grid-cols-3 py-3">
           {/*----------Inpot-----1--------*/}
@@ -158,9 +165,10 @@ const AdmissionForm = () => {
           <div className="form-control">
             <label className="form-control w-full ">
               <span className="label-text text-xl ">Blood Group</span>
-              <select 
-               name="bloodGroup"
-              className="select bg-slate-100 text-xl text-black w-full">
+              <select
+                name="bloodGroup"
+                className="select bg-slate-100 text-xl text-black w-full"
+              >
                 <option value="a+">A+</option>
                 <option value="a-">A-</option>
                 <option value="ab+">AB+</option>
@@ -244,8 +252,6 @@ const AdmissionForm = () => {
           </div>
         </div>
         <hr></hr>
-
-
 
         {/*----------Section---------7--------*/}
         {/*----------Inpot-----1--------*/}
@@ -413,7 +419,7 @@ const AdmissionForm = () => {
             </label>
             <input
               type="text"
-            //   name="rresult"
+              //   name="rresult"
               placeholder="Result GP"
               className="input input-bordered bg-slate-50 text-black text-xl"
             />
@@ -421,60 +427,65 @@ const AdmissionForm = () => {
         </div>
 
         <div className="grid lg:gap-16 md:gap-14  gap-3   lg:grid-cols-3 py-3">
+          {/*----------Radieo------Section-------*/}
+          <div>
+            <label className="label">
+              <span className="label-text text-xl">
+                আপনি কিভাবে কোর্স করতে চান *
+              </span>
+            </label>
 
-       {/*----------Radieo------Section-------*/}
-       <div>
-  <label className="label">
-    <span className="label-text text-xl">আপনি কিভাবে কোর্স করতে চান *</span>
-  </label>
-  
-  <div className="flex items-center gap-4 py-2">
-    <input
-      type="radio"
-      name="courseType"
-      value="Online"
-      className="radio"
-      defaultChecked
-    />
-    <span className="text-xl text-black">Online</span>
-  </div>
-  
-  <div className="flex items-center gap-4 py-2">
-    <input
-      type="radio"
-      name="courseType"
-      value="Offline"
-      className="radio"
-    />
-    <span className="text-xl text-black">Offline</span>
-  </div>
-</div>
+            <div className="flex items-center gap-4 py-2">
+              <input
+                type="radio"
+                name="courseType"
+                value="Online"
+                className="radio"
+                defaultChecked
+              />
+              <span className="text-xl text-black">Online</span>
+            </div>
 
-  {/*----------Inpot-----3--------*/}
-  <div className="form-control">
-            <label className="form-control w-full mb-2 ">
-              <span className="label-text text-xl "> কোর্স নির্বাচন করুন</span>
-              <select 
-               name="Corsename"
-              className="select bg-slate-100 text-xl text-black w-full">
-                <option value="বিএসসি ইন  নার্সিং 
-">বিএসসি ইন  নার্সিং 
+            <div className="flex items-center gap-4 py-2">
+              <input
+                type="radio"
+                name="courseType"
+                value="Offline"
+                className="radio"
+              />
+              <span className="text-xl text-black">Offline</span>
+            </div>
+          </div>
+
+          {/*----------Inpot-----3--------*/}
+          <div className="form-control">
+            <label className="form-control w-full">
+              <span className="label-text text-xl mt-3"> কোর্স নির্বাচন করুন</span>
+              <select
+                name="Corsename"
+                className="select bg-slate-100 text-xl mt-4 text-black w-full">
+                <option
+                  value="বিএসসি ইন  নার্সিং">
+                  বিএসসি ইন নার্সিং
                 </option>
-                <option value="ডিপ্লোমা ইন নার্সিং 
-">ডিপ্লোমা ইন নার্সিং 
+                <option
+                  value="ডিপ্লোমা ইন নার্সিং">
+                  ডিপ্লোমা ইন নার্সিং
                 </option>
-                <option value="ডিপ্লোমা ইন মিডওয়াইফারি
-">ডিপ্লোমা ইন মিডওয়াইফারি
+                <option
+                  value="ডিপ্লোমা ইন মিডওয়াইফারি">
+                  ডিপ্লোমা ইন মিডওয়াইফারি
                 </option>
-               
               </select>
             </label>
           </div>
-          </div>
+        </div>
 
         {/* <input type="submit" value="submit" /> */}
         <div className="mt-4 flex justify-center">
-        <button className=" btn text-xl text-white   hover:bg-slate-300  hover:text-black bg-custom-bg w-1/3"> Submit</button>
+          <button className=" btn text-xl text-white   hover:bg-slate-300  hover:text-black bg-custom-bg w-1/3">
+            Submit
+          </button>
         </div>
       </form>
     </div>
@@ -482,14 +493,3 @@ const AdmissionForm = () => {
 };
 
 export default AdmissionForm;
-
-{
-  /* <option value="a+">A+</option>
-<option value="a-">A-</option>
-<option value="ab+">AB+</option>
-<option value="ab-">AB-</option>
-<option value="b+">B+</option>
-<option value="b-">B-</option>
-<option value="o+">O+</option>
-<option value="o-">O-</option> */
-}
