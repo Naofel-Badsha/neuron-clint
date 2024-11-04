@@ -1,0 +1,56 @@
+[
+    {
+        "id": 1,
+        "image": "https://i.ibb.co/Drs30hD/rev-1.jpg",
+        "user_name": "John Doe",
+        "review_text": "I was pleasantly surprised by the quality of this product. It arrived on time and was exactly as described. The packaging was secure, and the item works perfectly. I will definitely be purchasing again in the future"
+    },
+    {
+        "id": 2,
+        "image": "https://i.ibb.co/JzLhcqK/rev-2.jpg",
+        "user_name": "Jane Smith",
+        "review_text": "The product was decent for the price, but I had some issues with the shipping. It took longer than expected,  damaged. However, the customer service team was very helpful in resolving my concerns."
+    },
+    {
+        "id": 3,
+        "image": "https://i.ibb.co/59thnDP/rev-3.jpg",
+        "user_name": "Alice Johnson",
+        "review_text": "I am extremely satisfied with my purchase. The product is of excellent quality, and the customer support team was very responsive. They answered all my questions promptly. I highly recommend this to anyone."
+    },
+    {
+        "id": 4,
+        "image": "https://i.ibb.co/H4kmffH/rev-4.jpg",
+        "user_name": "Michael Brown",
+        "review_text": "This product is fantastic! It works exactly as advertised, and I have had no issues with it so far. The delivery was quick, and the item was well-packaged. I would definitely recommend it to friends and family."
+    },
+    {
+        "id": 5,
+        "image": "https://i.ibb.co/mzfF0LQ/rev-5.jpg",
+        "user_name": "Chris Davis",
+        "review_text": "Unfortunately, my experience was not as positive as I had hoped. The product did not meet my expectations, and I had to return it. The return process was smooth, but I wish the item had been better quality."
+    },
+    {
+        "id": 6,
+        "image": "https://i.ibb.co/jvygcGx/rev-6.jpg",
+        "user_name": "Patricia Miller",
+        "review_text": "I had a minor issue with the product, but the company handled it very professionally. They sent me a replacement right away, and the new item works perfectly. Great customer service and a solid product overall"
+    },
+    {
+        "id": 7,
+        "image": "https://i.ibb.co/XJJF0PV/rev-10.jpg",
+        "user_name": "David Wilson",
+        "review_text": "The product is good, but not great. It performs its function, but I was expecting a bit more based on the description. It’s not bad, but I probably wouldn’t buy it again unless it was on sale."
+    },
+    {
+        "id": 8,
+        "image": "https://i.ibb.co/Fq5gYgW/rev-8.jpg",
+        "user_name": "Sophia Moore",
+        "review_text": "Excellent product! I’ve been using it daily for a few weeks now, and it’s holding up well. The quality is impressive, and it looks exactly like the pictures. The shipping was fast, and everything arrived in perfect condition."
+    },
+    {
+        "id": 9,
+        "image": "https://i.ibb.co/m9b5LZc/rev-9.jpg",
+        "user_name": "James Taylor",
+        "review_text": "I had high hopes for this product, but it fell short in a few areas. The design is nice, but the functionality is not as robust as I would like. It’s okay for occasional use, but not for heavy-duty tasks."
+    }
+]

@@ -1,0 +1,174 @@
+[
+    {
+      "id": 1,
+      "branch_name": "Dhanmondi Branch",
+      "rood_location": "House 12, Road 5, Dhanmondi, Dhaka",
+      "phone_number": "+8801712345678",
+      "manager_name": "Md. Ashraf Hossain",
+      "facebook_link": "https://facebook.com/ashraf.hossain",
+      "instagram_link": "https://instagram.com/ashraf.hossain",
+      "youtube_link": "https://youtube.com/ashraf.hossain"
+    },
+    {
+      "id": 2,
+      "branch_name": "Gulshan Branch",
+      "rood_location": "Flat 3A, Block B, Road 12, Gulshan 2, Dhaka",
+      "phone_number": "+8801812345678",
+      "manager_name": "Sadia Rahman",
+      "facebook_link": "https://facebook.com/sadia.rahman",
+      "instagram_link": "https://instagram.com/sadia.rahman",
+      "youtube_link": "https://youtube.com/sadia.rahman"
+    },
+    {
+      "id": 3,
+      "branch_name": "Sylhet Branch",
+      "rood_location": "House 15, Sylhet-Sunamganj Road, Subid Bazar, Sylhet",
+      "phone_number": "+8801912345678",
+      "manager_name": "Jamal Ahmed",
+      "facebook_link": "https://facebook.com/jamal.ahmed",
+      "instagram_link": "https://instagram.com/jamal.ahmed",
+      "youtube_link": "https://youtube.com/jamal.ahmed"
+    },
+    {
+      "id": 4,
+      "branch_name": "Khulna Branch",
+      "rood_location": "House 7, Road 4, Nirala, Khulna",
+      "phone_number": "+8801612345678",
+      "manager_name": "Nasrin Akter",
+      "facebook_link": "https://facebook.com/nasrin.akter",
+      "instagram_link": "https://instagram.com/nasrin.akter",
+      "youtube_link": "https://youtube.com/nasrin.akter"
+    },
+    {
+      "id": 5,
+      "branch_name": "Rajshahi Branch",
+      "rood_location": "House 22, Road 10, New Market, Rajshahi",
+      "phone_number": "+8801512345678",
+      "manager_name": "Shamim Hossain",
+      "facebook_link": "https://facebook.com/shamim.hossain",
+      "instagram_link": "https://instagram.com/shamim.hossain",
+      "youtube_link": "https://youtube.com/shamim.hossain"
+    },
+    {
+      "id": 6,
+      "branch_name": "Barisal Branch",
+      "rood_location": "House 19, Road 6, Amtoy, Barisal",
+      "phone_number": "+8801711122334",
+      "manager_name": "Farhana Islam",
+      "facebook_link": "https://facebook.com/farhana.islam",
+      "instagram_link": "https://instagram.com/farhana.islam",
+      "youtube_link": "https://youtube.com/farhana.islam"
+    },
+    {
+      "id": 7,
+      "branch_name": "Rangpur Branch",
+      "rood_location": "House 3, Road 9, Lalbag, Rangpur",
+      "phone_number": "+8801811122334",
+      "manager_name": "Anwar Hossain",
+      "facebook_link": "https://facebook.com/anwar.hossain",
+      "instagram_link": "https://instagram.com/anwar.hossain",
+      "youtube_link": "https://youtube.com/anwar.hossain"
+    },
+    {
+      "id": 8,
+      "branch_name": "Mymensingh Branch",
+      "rood_location": "House 25, Road 3, Trishal, Mymensingh",
+      "phone_number": "+8801911122334",
+      "manager_name": "Rubel Mia",
+      "facebook_link": "https://facebook.com/rubel.mia",
+      "instagram_link": "https://instagram.com/rubel.mia",
+      "youtube_link": "https://youtube.com/rubel.mia"
+    },
+    {
+      "id": 9,
+      "branch_name": "Comilla Branch",
+      "rood_location": "House 9, Road 8, Kandirpar, Comilla",
+      "phone_number": "+8801611122334",
+      "manager_name": "Rafiq Uddin",
+      "facebook_link": "https://facebook.com/rafiq.uddin",
+      "instagram_link": "https://instagram.com/rafiq.uddin",
+      "youtube_link": "https://youtube.com/rafiq.uddin"
+    },
+    {
+      "id": 10,
+      "branch_name": "Narayanganj Branch",
+      "rood_location": "House 14, Road 5, Siddhirganj, Narayanganj",
+      "phone_number": "+8801511122334",
+      "manager_name": "Taslima Begum",
+      "facebook_link": "https://facebook.com/taslima.begum",
+      "instagram_link": "https://instagram.com/taslima.begum",
+      "youtube_link": "https://youtube.com/taslima.begum"
+    },
+    {
+      "id": 11,
+      "branch_name": "Kalabagan Branch",
+      "rood_location": "House 21, Road 10, Kalabagan, Dhaka",
+      "phone_number": "+8801712233445",
+      "manager_name": "Arifur Rahman",
+      "facebook_link": "https://facebook.com/arifur.rahman",
+      "instagram_link": "https://instagram.com/arifur.rahman",
+      "youtube_link": "https://youtube.com/arifur.rahman"
+    },
+    {
+      "id": 12,
+      "branch_name": "Banani Branch",
+      "rood_location": "Flat 5B, Block D, Road 7, Banani, Dhaka",
+      "phone_number": "+8801812233445",
+      "manager_name": "Meherun Nessa",
+      "facebook_link": "https://facebook.com/meherun.nessa",
+      "instagram_link": "https://instagram.com/meherun.nessa",
+      "youtube_link": "https://youtube.com/meherun.nessa"
+    },
+    {
+      "id": 13,
+      "branch_name": "Zindabazar Branch",
+      "rood_location": "House 18, Amberkhana Road, Zindabazar, Sylhet",
+      "phone_number": "+8801912233445",
+      "manager_name": "Akhtar Hossain",
+      "facebook_link": "https://facebook.com/akhtar.hossain",
+      "instagram_link": "https://instagram.com/akhtar.hossain",
+      "youtube_link": "https://youtube.com/akhtar.hossain"
+    },
+    {
+      "id": 14,
+      "branch_name": "Daulatpur Branch",
+      "rood_location": "House 5, Road 2, Daulatpur, Khulna",
+      "phone_number": "+8801612233445",
+      "manager_name": "Shirin Akhter",
+      "facebook_link": "https://facebook.com/shirin.akhter",
+      "instagram_link": "https://instagram.com/shirin.akhter",
+      "youtube_link": "https://youtube.com/shirin.akhter"
+    },
+    {
+      "id": 15,
+      "branch_name": "Kazla Branch",
+      "rood_location": "House 24, Road 15, Kazla, Rajshahi",
+      "phone_number": "+8801512233445",
+      "manager_name": "Mamun Khan",
+      "facebook_link": "https://facebook.com/mamun.khan",
+      "instagram_link": "https://instagram.com/mamun.khan",
+      "youtube_link": "https://youtube.com/mamun.khan"
+    },
+    {
+      "id": 16,
+      "branch_name": "New Court Road Branch",
+      "rood_location": "House 11, Road 4, New Court Road, Barisal",
+      "phone_number": "+8801712233446",
+      "manager_name": "Nasim Uddin",
+      "facebook_link": "https://facebook.com/nasim.uddin",
+      "instagram_link": "https://instagram.com/nasim.uddin",
+      "youtube_link": "https://youtube.com/nasim.uddin"
+    },
+    {
+      "id": 17,
+      "branch_name": "Pirgacha Branch",
+      "rood_location": "House 6, Road 3, Pirgacha, Rangpur",
+      "phone_number": "+8801812233446",
+      "manager_name": "Laila Akhter",
+      "facebook_link": "https://facebook.com/laila.akhter",
+      "instagram_link": "https://instagram.com/laila.akhter",
+      "youtube_link": "https://youtube.com/laila.akhter"
+    }
+]
+
+  
