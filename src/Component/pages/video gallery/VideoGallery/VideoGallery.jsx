@@ -17,7 +17,7 @@ const VideoGallery = () => {
   });
 
   return (
-    <div className="container m-auto py-10">
+    <div className="max-w-screen-xl mx-auto py-10 px-2">
       {/*==============Heading================*/}
       <div className="pb-10">
         <h2 className="text-center text-4xl text-[#333333] font-bold mt-8">
@@ -32,7 +32,7 @@ const VideoGallery = () => {
       <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
         {videoData.map((item, index) => (
           <div key={index}>
-            <div className="border-2 border-sky-600 ">
+            <div className="border-2 border-gray-700">
               <iframe
                 className="w-full h-[250px]"
                 src={item.videoUrl}

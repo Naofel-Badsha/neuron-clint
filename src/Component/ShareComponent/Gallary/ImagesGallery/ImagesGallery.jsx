@@ -38,7 +38,7 @@ const ImagesGallery = () => {
   };
 
   return (
-    <div className="container m-auto  px-1">
+    <div className="max-w-screen-xl mx-auto px-2">
       {/*==============Heading================*/}
       <div className="pb-10 mt-16">
         <h2 className="text-center text-4xl text-[#333333] font-bold mt-8">
@@ -51,46 +51,53 @@ const ImagesGallery = () => {
       </div>
 
       <div>
-        {/* Filter Buttons */}
-        <div className="flex flex-wrap gap-6 md:gap-6 py-10">
+        {/*---------Filter---------Buttons---------*/}
+        {/* flex-wrap gap-2 md:gap-6 lg:gap-6 */}
+        <div className="flex gap-6 overflow-x-auto mt-5 mb-10">
           <button
-            className="px-4 md:px-5 pb-2 md:pb-4 pt-3 md:pt-5 text-white hover:text-white bg-slate-600  rounded-md hover:bg-custom-bg cursor-pointer focus:bg-[#ff4a4a] focus:text-white text-2xl"
+            className="btn mb-2 text-white hover:text-white bg-slate-600  rounded-md hover:bg-custom-bg cursor-pointer focus:bg-[#ff4a4a] focus:text-white text-lg md:text-xl lg:text-2xl"
             onClick={() => setItems(Image)}
           >
             All
           </button>
           <button
-            className="px-4 md:px-5 pb-2 md:pb-4 pt-3 md:pt-5 text-white hover:text-white bg-slate-600  rounded-md hover:bg-custom-bg cursor-pointer focus:bg-[#ff4a4a] focus:text-white text-2xl"
+            className="btn mb-2 text-white hover:text-white bg-slate-600  rounded-md hover:bg-custom-bg cursor-pointer focus:bg-[#ff4a4a] focus:text-white text-lg md:text-xl lg:text-2xl"
             onClick={() => filterItem("success")}
           >
             Success
           </button>
           <button
-            className="px-4 md:px-5 pb-2 md:pb-4 pt-3 md:pt-5 text-white hover:text-white bg-slate-600  rounded-md hover:bg-custom-bg cursor-pointer focus:bg-[#ff4a4a] focus:text-white text-2xl"
+            className="btn mb-2 text-white hover:text-white bg-slate-600  rounded-md hover:bg-custom-bg cursor-pointer focus:bg-[#ff4a4a] focus:text-white text-lg md:text-xl lg:text-2xl"
             onClick={() => filterItem("campus")}
           >
             Campus
           </button>
           <button
-            className="px-4 md:px-5 pb-2 md:pb-4 pt-3 md:pt-5 text-white hover:text-white bg-slate-600  rounded-md hover:bg-custom-bg cursor-pointer focus:bg-[#ff4a4a] focus:text-white text-2xl"
+            className="btn mb-2 text-white hover:text-white bg-slate-600  rounded-md hover:bg-custom-bg cursor-pointer focus:bg-[#ff4a4a] focus:text-white text-lg md:text-xl lg:text-2xl"
             onClick={() => filterItem("students")}
           >
             Students
           </button>
           <button
-            className="px-4 md:px-5 pb-2 md:pb-4 pt-3 md:pt-5 text-white hover:text-white bg-slate-600  rounded-md hover:bg-custom-bg cursor-pointer focus:bg-[#ff4a4a] focus:text-white text-2xl"
+            className="btn mb-2 text-white hover:text-white bg-slate-600  rounded-md hover:bg-custom-bg cursor-pointer focus:bg-[#ff4a4a] focus:text-white text-lg md:text-xl lg:text-2xl"
             onClick={() => filterItem("others")}
           >
             Others
           </button>
         </div>
 
-        {/* Image Gallery */}
+        {/*---------Image---------Gallery---------*/}
         <div className="grid gap-6 md:grid-cols-3 lg:grid-cols-4">
           {items.map((item) => (
             <ImageCard key={item.id} item={item} />
           ))}
         </div>
+      </div>
+    </div>
+  );
+};
+
+export default ImagesGallery;
 
         {/* See More Button */}
         {/* <div className="flex justify-center mt-6">
@@ -100,9 +107,3 @@ const ImagesGallery = () => {
             </button>
           </Link>
         </div> */}
-      </div>
-    </div>
-  );
-};
-
-export default ImagesGallery;

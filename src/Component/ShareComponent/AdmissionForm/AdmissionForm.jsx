@@ -65,7 +65,7 @@ const AdmissionForm = () => {
     <div className="max-w-screen-xl mx-auto pop mt-10 px-2">
       <form
         onSubmit={handleSubmitForm}
-        className="p-3 border-4 border-orange-600 shadow-md rounded-lg "
+        className="p-3 border-2 shadow-md rounded-lg" 
       >
         
         <h3 className="font-semibold text-lg md:text-2xl flex gap-2 items-center text-green-900">

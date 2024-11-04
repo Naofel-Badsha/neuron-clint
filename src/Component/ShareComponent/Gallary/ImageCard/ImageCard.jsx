@@ -21,15 +21,15 @@ const ImageCard = ({ item }) => {
         <img src={tempImage} />
         <IoMdClose onClick={() => setModel(false)}/>
       </div>
-      <div className=" card-compact bg-base-100 shadow-xl">
+      <div className="card-compact bg-base-100 shadow-xl">
         {/*--------Main------Image-----------*/}
         <div
           onClick={() => getImg(image)}
-          className="pics "
+          className="pics w-full h-[250px]"
         >
           <img
             src={image}
-            className="w-full h-[260px] border-2 border-gray-700 object-cover bg-inherit hover:opacity-05 cursor-pointer"
+            className="w-full h-[250px] border-2 border-gray-700 object-cover bg-inherit hover:opacity-05 cursor-pointer"
           />
         </div>
       </div>
