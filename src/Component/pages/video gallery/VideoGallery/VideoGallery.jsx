@@ -20,7 +20,7 @@ const VideoGallery = () => {
     <div className="max-w-screen-xl mx-auto py-10 px-2">
       {/*==============Heading================*/}
       <div className="pb-10">
-        <h2 className="text-center text-4xl text-[#333333] font-bold mt-8">
+        <h2 className="text-center text-2xl md:text-4xl lg:text-4xl text-[#333333] font-bold mt-8">
           ভিডিও <span className="text-custom-bg">গ্যালারি</span>
         </h2>
         <div className="flex w-16 m-auto">

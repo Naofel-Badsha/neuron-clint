@@ -12,7 +12,7 @@ const bookcard = ({ item }) => {
 
   return (
     <div
-      className=" border border-gray-400 bg-white p-8 shadow-xl rounded-xl"
+      className="mt-2 border-2 border-gray-400 bg-white p-4 shadow-xl rounded-xl"
       data-aos="slide-up"
     >
       <div className="w-full h-72">
@@ -21,7 +21,7 @@ const bookcard = ({ item }) => {
           className="object-cover w-full h-72 rounded-2xl"
         />
       </div>
-      <div className="">
+      <div>
         <h3 className="font-extrabold text-xl mt-5 text-center">{item.name}</h3>
         <div className="font-extrabold text-xl mt-2 flex items-center text-center justify-center pb-3">
           <TbCurrencyTaka className="text-2xl" />

@@ -3,7 +3,7 @@ import UccAboutImage1 from "../../../assets/aboutimage.jpg";
 import UccAboutImage2 from "../../../assets/about-2.png";
 const AboutUs = () => {
   return (
-    <div className="mx-6 m-auto mt-6">
+    <div className="max-w-screen-xl mx-auto mt-6 px-2">
       {/*-----------UccAbout-------Main-----Content--------*/}
       {/*-----------hero------1-----------*/}
       <div className="hero">
@@ -11,13 +11,13 @@ const AboutUs = () => {
           {/*--------------Text------------*/}
           <div className="flex-1">
             <div>
-              <h1 className="text-3xl text-black text-justify font-bold">
+              <h1 className="text-3xl text-black font-bold">
                 আমাদের{" "}
                 <span className="text-3xl font-bold text-custom-bg">
                   সম্পর্কে
                 </span>
               </h1>
-              <p className="text-xl text-black text-justify py-5">
+              <p className="text-lg md:text-xl lg:text-xl text-black  md:text-justify lg:text-justify py-5">
                 মানব সেবায় নার্সিং একটি নোভেল প্রফেশন, দিন দিন সারা বিশ্বে এর
                 গুরুত্ব বাড়ছে। বাংলাদেশের নার্সিং বইয়ের প্রকাশনা জগতে নিউরন
                 পাবলিকেশন স্বনামধন্য ও গৌরবউজ্জল একটি নাম। এই নিউরন পাবলিকেশন
@@ -37,7 +37,7 @@ const AboutUs = () => {
           </div>
           {/*-------------Image----------------*/}
           <div className="flex-1">
-            <img src={UccAboutImage1} className="m-auto w-full h-[500px] object-cover border-2" />
+            <img src={UccAboutImage1} className="m-auto w-full h-[500px] object-cover border-2 rounded-md" />
           </div>
         </div>
       </div>
@@ -46,18 +46,18 @@ const AboutUs = () => {
         <div className="flex items-center justify-between gap-16 flex-col-reverse lg:flex-row py-10">
           {/*-------------Image----------------*/}
           <div className="flex-1">
-            <img src={UccAboutImage2} className="m-auto w-full h-[500px] object-cover border-2" />
+            <img src={UccAboutImage2} className="m-auto w-full h-[500px] object-cover border-2 rounded-md" />
           </div>
           {/*--------------Text------------*/}
           <div className="flex-1">
             <div>
-              <h1 className="text-3xl text-black text-justify font-bold">
+              <h1 className="text-3xl text-black  font-bold">
                 ৯ বছরের ঈর্ষান্বিত সফলতাকে সঙ্গে নিয়ে ১০ এর কোটায় পা রেখেছে{" "}
                 <span className="text-3xl font-bold text-custom-bg">
                   নিউরন পরিবার ! ! !
                 </span>
               </h1>
-              <p className="text-xl text-black text-justify py-5">
+              <p className="text-lg md:text-xl lg:text-xl text-black  md:text-justify lg:text-justify py-5">
                 শিক্ষার মূল উদ্দেশ্য হলো একজন শিক্ষার্থীর সুপ্ত মেধা ও প্রতিভাকে
                 বিকশিত করা, তার চিন্তা শক্তিকে ত্বরান্বিত করা এবং তাকে ধৈর্যশীল,
                 আত্মবিশ্বাসী, নীতিবান ও দায়িত্ববান মানুষ হিসাবে গড়ে তোলা, এই

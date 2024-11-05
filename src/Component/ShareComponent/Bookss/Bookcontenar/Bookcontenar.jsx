@@ -34,10 +34,10 @@ const Bookcontenar = () => {
   };
 
   return (
-    <div className="max-w-screen-xl mx-auto my-4">
+    <div className="max-w-screen-xl mx-auto my-4 px-2">
       {/*==============Heading================*/}
       <div className="">
-        <h2 className="text-center text-4xl text-[#333333] font-bold mt-8">
+        <h2 className="text-center text-2xl md:text-4xl lg:text-4xl text-[#333333] font-bold mt-8">
           আমাদের <span className="text-custom-bg">বইসমূহ</span>
         </h2>
         <div className="flex w-16 m-auto">
@@ -47,33 +47,33 @@ const Bookcontenar = () => {
       </div>
 
       <div>
-        <div className="flex flex-wrap gap-6 py-10 justify-center">
+        <div className="flex gap-6 mt-16 mb-6 overflow-x-auto">
           <button
-            className="px-5 pb-4 pt-5 text-black hover:text-white bg-slate-200 hover:bg-slate-700 cursor-pointer focus:bg-[#ff4a4a] focus:text-white text-2xl rounded-xl"
+            className="btn mb-2 text-black hover:text-white bg-slate-200 hover:bg-slate-700 cursor-pointer focus:bg-[#ff4a4a] focus:text-white rounded-md text-lg md:text-xl lg:text-2xl"
             onClick={() => setItems(Image)}
           >
-            All
+            সব
           </button>
           <button
-            className="px-5 pb-4 pt-5 text-black hover:text-white bg-slate-200 hover:bg-slate-700 cursor-pointer focus:bg-[#ff4a4a] focus:text-white text-2xl rounded-xl"
+            className="btn mb-2 text-black hover:text-white bg-slate-200 hover:bg-slate-700 cursor-pointer focus:bg-[#ff4a4a] focus:text-white text-lg md:text-xl lg:text-2xl rounded-xl"
             onClick={() => filterItem("akadami")}
           >
             একাডেমিক বই
           </button>
           <button
-            className="px-5 pb-4 pt-5 text-black hover:text-white bg-slate-200 hover:bg-slate-700 cursor-pointer focus:bg-[#ff4a4a] focus:text-white text-2xl rounded-xl"
+            className="btn mb-2 text-black hover:text-white bg-slate-200 hover:bg-slate-700 cursor-pointer focus:bg-[#ff4a4a] focus:text-white rounded-md text-lg md:text-xl lg:text-2xl"
             onClick={() => filterItem("niyog")}
           >
             নিয়োগ বই
           </button>
           <button
-            className="px-5 pb-4 pt-5 text-black hover:text-white bg-slate-200 hover:bg-slate-700 cursor-pointer focus:bg-[#ff4a4a] focus:text-white text-2xl rounded-xl"
+            className="btn mb-2 text-black hover:text-white bg-slate-200 hover:bg-slate-700 cursor-pointer focus:bg-[#ff4a4a] focus:text-white rounded-md text-lg md:text-xl lg:text-2xl"
             onClick={() => filterItem("admission")}
           >
             এডমিশন বই
           </button>
         </div>
-        <div className="grid gap-2 md:grid-cols-3 lg:grid-cols-4">
+        <div className="grid gap-6 md:grid-cols-3 lg:grid-cols-4">
           {items.map((item) => (
             <Bookcard key={item.id} item={item} />
           ))}
