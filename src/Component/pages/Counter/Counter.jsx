@@ -15,14 +15,14 @@ const Counter = () => {
   }, []);
 
   return (
-    <div className="container mx-auto">
+    <div className="max-w-screen-xl mx-auto px-2">
       <ScrollTrigger
         onEnter={() => setCounterOn(true)}
         onExit={() => setCounterOn(false)}
       >
         {/*---------Counter---------Start---------*/}
         <div className="scrollable-container">
-          <div className="grid gap-10 md:grid-cols-1 lg:grid-cols-3 p-6">
+          <div className="grid gap-6 md:grid-cols-1 lg:grid-cols-3">
             {/*-------------Counter---------1---------*/}
             <Link to="/Allbranch">
             <div className="" data-aos="fade-right">

@@ -28,7 +28,6 @@ const Home = () => {
         <title>HomeFixer || Home</title>
       </Helmet>
       <Hadeline></Hadeline>
-      <div className="max-w-screen-xl mx-auto"></div>
       <div className="hidden md:block lg:block">
         <Slider></Slider>
       </div>
@@ -36,31 +35,11 @@ const Home = () => {
         <Slidersmall></Slidersmall>
       </div>
 
-      {/* <Title></Title> */}
+      <UccaAbout></UccaAbout>
+      <Counter></Counter>
+      <Corsehome></Corsehome>
+      <Student></Student>
 
-      <div className="w-full bg-[#fef2f2]">
-        <div className="max-w-screen-xl mx-auto">
-          <UccaAbout></UccaAbout>
-        </div>
-      </div>
-
-      <div className="w-full ">
-        <div className="max-w-screen-xl mx-auto">
-          <Counter></Counter>
-        </div>
-      </div>
-
-      <div className="w-full bg-[#fef2f2]">
-        <div className="max-w-screen-xl mx-auto">
-          <Corsehome></Corsehome>
-        </div>
-      </div>
-
-      <div className="w-full ">
-        <div className="max-w-screen-xl mx-auto">
-          <Student></Student>
-        </div>
-      </div>
 
       {/* <Slider2></Slider2> */}
 

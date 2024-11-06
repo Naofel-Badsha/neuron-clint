@@ -68,20 +68,18 @@ const AllCorsess = () => {
   }
 
   return (
-    <div>
-      <div className="mt-14 mb-6">
-        {/*==============Heading================*/}
-        <div className="pb-10 mt-16">
-          <h2 className="text-center text-5xl text-[#333333] font-bold mt-8">
-            আমাদের<span className="text-custom-bg">কোর্সসমূহ</span>
-          </h2>
-          <div className="flex w-20 m-auto">
-            <span className="w-10 h-[4px] bg-[#333333]"></span>
-            <span className="w-10 h-[4px] bg-custom-bg "></span>
-          </div>
+    <div className="max-w-screen-xl mx-auto px-2 mt-14 mb-6">
+      {/*==============Heading================*/}
+      <div className="pb-10 mt-16">
+        <h2 className="text-center text-2xl md:text-4xl lg:text-4xl text-[#333333] font-bold mt-8">
+          আমাদের <span className="text-custom-bg">কোর্স সমূহ</span>
+        </h2>
+        <div className="flex w-20 m-auto">
+          <span className="w-10 h-[4px] bg-[#333333]"></span>
+          <span className="w-10 h-[4px] bg-custom-bg "></span>
         </div>
       </div>
-      <div className=" grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6 p-2">
+      <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6 ">
         {data.map((corse, idx) => (
           <Corscard key={idx} corse={corse}></Corscard>
         ))}

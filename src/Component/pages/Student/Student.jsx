@@ -32,13 +32,13 @@ const Student = () => {
   });
 
   return (
-    <div className=" m-auto mb-10 p-3">
+    <div className="max-w-screen-xl mx-auto mb-10 px-2">
       {/*-----------Heading-----------*/}
       <div className="py-6">
         {/*==============Heading================*/}
         <div className="pb-10 mt-16">
-          <h2 className="text-center text-5xl text-[#333333] font-bold mt-8">
-            আমাদের<span className="text-custom-bg">সাফল্য</span>গাঁথা
+          <h2 className="text-center text-3xl md:text-4xl lg:text-5xl text-[#333333] font-bold mt-8">
+            আমাদের <span className="text-custom-bg"> সাফল্য </span>গাঁথা
           </h2>
           <div className="flex w-20 m-auto">
             <span className="w-10 h-[4px] bg-[#333333]"></span>

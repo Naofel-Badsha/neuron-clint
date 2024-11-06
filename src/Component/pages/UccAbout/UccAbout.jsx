@@ -10,14 +10,12 @@ const UccAbout = () => {
     AOS.init({ duration: 2000 }); // Initialize AOS with animation duration
   }, []);
   return (
-    <div className=" mx-auto mt-6">
-      {/*-----------Heading-----------*/}
-
+    <div className="max-w-screen-xl mx-auto mt-6 px-2">
       {/*-----------UccAbout-------Main-----Content--------*/}
-      <div className="hero   ">
+      <div className="hero">
         <div className="flex items-center justify-between gap-16 flex-col lg:flex-row">
           {/*--------------Text------------*/}
-          <div className="flex-1 " data-aos="fade-right">
+          <div className="flex-1" data-aos="fade-right">
             <div>
               <h1 className="text-2xl md:text-3xl text-black text-justify font-bold">
               ৯ বছরের ঈর্ষান্বিত সফলতাকে সঙ্গে নিয়ে ১০ এর কোটায় পা রেখেছে 
@@ -40,8 +38,8 @@ const UccAbout = () => {
             </div>
           </div>
           {/*-------------Image----------------*/}
-          <div className="flex-1 " data-aos="zoom-in">
-            <img src={UccAboutImage} className=" mx-auto " />
+          <div className="flex-1" data-aos="zoom-in">
+            <img src={UccAboutImage} className="m-auto w-full h-[400px] object-cover rounded-md" />
           </div>
         </div>
       </div>

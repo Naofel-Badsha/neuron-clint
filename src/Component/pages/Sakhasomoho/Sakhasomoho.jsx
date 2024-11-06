@@ -135,12 +135,17 @@ function Sakhasomoho() {
     mymensinghLoading ||
     sylhetLoading
   ) {
-    return <p>Loading...</p>;
+    return <div>
+       <div className="flex items-center justify-center h-[80vh]">
+        <img src="https://i.ibb.co.com/dgRqxB7/loding-3.gif" 
+        className="w-40 h-40 m-auto" />
+       </div>
+    </div>;
   }
 
   return (
-    <div className=" max-w-screen-xl mx-auto">
-      <h2 className="text-center text-4xl font-bold mb-8 mt-8">
+    <div className="max-w-screen-xl mx-auto px-2">
+      <h2 className="text-center text-2xl md:text-4xl lg:text-4xl font-bold mb-8 mt-8">
         আমাদের <span className="text-custom-bg">শাখাসমূহ</span>
       </h2>
       {/*==============Heading================*/}
@@ -154,7 +159,7 @@ function Sakhasomoho() {
         </div>
       </div>
 
-      <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 ">
+      <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
         {/*---------------Card-----------*/}
         {mainBranch.map((data, idx) => (
           <div
@@ -162,26 +167,26 @@ function Sakhasomoho() {
             className="bg-[#f9ecea] w-full border-[3px] border-gray-200 rounded-2xl p-2 hover:-translate-y-1 duration-300 "
           >
             <div>
-              <h2 className="text-2xl text-center text-[#333333] font-bold mt-4 ">
+              <h2 className="text-xl md:text-2xl lg:text-xl text-center text-[#333333] font-bold mt-4 ">
                 {data.branchName}
               </h2>
               <div className="flex items-start py-6 px-3">
                 <div>
-                  <div className="flex items-center">
-                    <FaUserNurse className="text-2xl text-[#dd020c]" />
-                    <h3 className="text-xl text-[#3c3a3a] py-2 ml-2">
+                  <div className="flex">
+                    <FaUserNurse className="text-2xl mt-[5px] text-[#dd020c]" />
+                    <h3 className="text-md md:text-xl lg:text-xl text-[#3c3a3a] py-2 ml-2">
                       পরিচালক: {data.director}
                     </h3>
                   </div>
-                  <div className="flex items-center">
-                    <FaPhoneAlt className="text-2xl text-[#dd020c]" />
-                    <h4 className="text-xl text-[#3c3a3a] py-2 ml-2">
+                  <div className="flex ">
+                    <FaPhoneAlt className="text-2xl mt-[5px] text-[#dd020c]" />
+                    <h4 className="text-md md:text-xl lg:text-xl text-[#3c3a3a] py-2 ml-2">
                       {data.phone}
                     </h4>
                   </div>
-                  <div className="flex items-center">
-                    <FaLocationDot className="text-2xl text-[#dd020c]" />
-                    <h4 className="text-xl text-[#3c3a3a] py-2 ml-2">
+                  <div className="flex ">
+                    <FaLocationDot className="text-4xl mt-[5px] text-[#dd020c]" />
+                    <h4 className="text-md md:text-xl lg:text-xl text-[#3c3a3a] py-2 ml-2">
                       {data.location}
                     </h4>
                   </div>
@@ -221,8 +226,8 @@ function Sakhasomoho() {
         </div>
       </div>
 
-      {/*-----------Heading-----------*/}
-      <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 ">
+      {/*-----------ঢাকা-------শাখা-------*/}
+      <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
         {/*---------------Card-----------*/}
         {dhakaBranch.map((data, idx) => (
           <div
@@ -235,21 +240,21 @@ function Sakhasomoho() {
               </h2>
               <div className="flex items-start py-6 px-3">
                 <div>
-                  <div className="flex items-center">
-                    <FaUserNurse className="text-2xl text-[#dd020c]" />
-                    <h3 className="text-xl text-[#3c3a3a] py-2 ml-2">
+                  <div className="flex">
+                    <FaUserNurse className="text-2xl mt-[5px] text-[#dd020c]" />
+                    <h3 className="text-md md:text-xl lg:text-xl text-[#3c3a3a] py-2 ml-2">
                       পরিচালক: {data.director}
                     </h3>
                   </div>
-                  <div className="flex items-center">
-                    <FaPhoneAlt className="text-2xl text-[#dd020c]" />
-                    <h4 className="text-xl text-[#3c3a3a] py-2 ml-2">
+                  <div className="flex">
+                    <FaPhoneAlt className="text-2xl mt-[5px] text-[#dd020c]" />
+                    <h4 className="text-md md:text-xl lg:text-xl text-[#3c3a3a] py-2 ml-2">
                       {data.phone}
                     </h4>
                   </div>
-                  <div className="flex items-center">
-                    <FaLocationDot className="text-2xl text-[#dd020c]" />
-                    <h4 className="text-xl text-[#3c3a3a] py-2 ml-2">
+                  <div className="flex">
+                    <FaLocationDot className="text-2xl mt-[5px] text-[#dd020c]" />
+                    <h4 className="text-md md:text-xl lg:text-xl text-[#3c3a3a] py-2 ml-2">
                       {data.location}
                     </h4>
                   </div>
@@ -289,8 +294,8 @@ function Sakhasomoho() {
         </div>
       </div>
 
-      {/*-----------Heading-----------*/}
-      <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 ">
+      {/*-----------খুলনা-------শাখা-------*/}
+      <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
         {/*---------------Card-----------*/}
         {khulnaBranch.map((data, idx) => (
           <div
@@ -303,21 +308,21 @@ function Sakhasomoho() {
               </h2>
               <div className="flex items-start py-6 px-3">
                 <div>
-                  <div className="flex items-center">
-                    <FaUserNurse className="text-2xl text-[#dd020c]" />
-                    <h3 className="text-xl text-[#3c3a3a] py-2 ml-2">
+                  <div className="flex">
+                    <FaUserNurse className="text-2xl mt-[5px] text-[#dd020c]" />
+                    <h3 className="text-md md:text-xl lg:text-xl text-[#3c3a3a] py-2 ml-2">
                       পরিচালক: {data.director}
                     </h3>
                   </div>
-                  <div className="flex items-center">
-                    <FaPhoneAlt className="text-2xl text-[#dd020c]" />
-                    <h4 className="text-xl text-[#3c3a3a] py-2 ml-2">
+                  <div className="flex">
+                    <FaPhoneAlt className="text-2xl mt-[5px] text-[#dd020c]" />
+                    <h4 className="text-md md:text-xl lg:text-xl text-[#3c3a3a] py-2 ml-2">
                       {data.phone}
                     </h4>
                   </div>
-                  <div className="flex items-center">
-                    <FaLocationDot className="text-2xl text-[#dd020c]" />
-                    <h4 className="text-xl text-[#3c3a3a] py-2 ml-2">
+                  <div className="flex">
+                    <FaLocationDot className="text-2xl mt-[5px] text-[#dd020c]" />
+                    <h4 className="text-md md:text-xl lg:text-xl text-[#3c3a3a] py-2 ml-2">
                       {data.location}
                     </h4>
                   </div>
@@ -357,8 +362,8 @@ function Sakhasomoho() {
         </div>
       </div>
 
-      {/*-----------Heading-----------*/}
-      <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 ">
+     {/*-----------রাজশাহী-------শাখা-------*/}
+      <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
         {/*---------------Card-----------*/}
         {rajshahiBranch.map((data, idx) => (
           <div
@@ -371,21 +376,21 @@ function Sakhasomoho() {
               </h2>
               <div className="flex items-start py-6 px-3">
                 <div>
-                  <div className="flex items-center">
-                    <FaUserNurse className="text-2xl text-[#dd020c]" />
-                    <h3 className="text-xl text-[#3c3a3a] py-2 ml-2">
+                  <div className="flex">
+                    <FaUserNurse className="text-2xl mt-[5px] text-[#dd020c]" />
+                    <h3 className="text-md md:text-xl lg:text-xl text-[#3c3a3a] py-2 ml-2">
                       পরিচালক: {data.director}
                     </h3>
                   </div>
-                  <div className="flex items-center">
-                    <FaPhoneAlt className="text-2xl text-[#dd020c]" />
-                    <h4 className="text-xl text-[#3c3a3a] py-2 ml-2">
+                  <div className="flex">
+                    <FaPhoneAlt className="text-2xl mt-[5px] text-[#dd020c]" />
+                    <h4 className="text-md md:text-xl lg:text-xl text-[#3c3a3a] py-2 ml-2">
                       {data.phone}
                     </h4>
                   </div>
-                  <div className="flex items-center">
-                    <FaLocationDot className="text-2xl text-[#dd020c]" />
-                    <h4 className="text-xl text-[#3c3a3a] py-2 ml-2">
+                  <div className="flex">
+                    <FaLocationDot className="text-2xl mt-[5px] text-[#dd020c]" />
+                    <h4 className="text-md md:text-xl lg:text-xl text-[#3c3a3a] py-2 ml-2">
                       {data.location}
                     </h4>
                   </div>
@@ -425,8 +430,8 @@ function Sakhasomoho() {
         </div>
       </div>
 
-      {/*-----------Heading-----------*/}
-      <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 ">
+      {/*-----------চট্টগ্রাম-------শাখা-------*/}
+      <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
         {/*---------------Card-----------*/}
         {chattogramBranch.map((data, idx) => (
           <div
@@ -439,21 +444,21 @@ function Sakhasomoho() {
               </h2>
               <div className="flex items-start py-6 px-3">
                 <div>
-                  <div className="flex items-center">
-                    <FaUserNurse className="text-2xl text-[#dd020c]" />
-                    <h3 className="text-xl text-[#3c3a3a] py-2 ml-2">
+                  <div className="flex">
+                    <FaUserNurse className="text-2xl mt-[5px] text-[#dd020c]" />
+                    <h3 className="text-md md:text-xl lg:text-xl text-[#3c3a3a] py-2 ml-2">
                       পরিচালক: {data.director}
                     </h3>
                   </div>
-                  <div className="flex items-center">
-                    <FaPhoneAlt className="text-2xl text-[#dd020c]" />
-                    <h4 className="text-xl text-[#3c3a3a] py-2 ml-2">
+                  <div className="flex">
+                    <FaPhoneAlt className="text-2xl mt-[5px] text-[#dd020c]" />
+                    <h4 className="text-md md:text-xl lg:text-xl text-[#3c3a3a] py-2 ml-2">
                       {data.phone}
                     </h4>
                   </div>
-                  <div className="flex items-center">
-                    <FaLocationDot className="text-2xl text-[#dd020c]" />
-                    <h4 className="text-xl text-[#3c3a3a] py-2 ml-2">
+                  <div className="flex">
+                    <FaLocationDot className="text-2xl mt-[5px] text-[#dd020c]" />
+                    <h4 className="text-md md:text-xl lg:text-xl text-[#3c3a3a] py-2 ml-2">
                       {data.location}
                     </h4>
                   </div>
@@ -493,8 +498,8 @@ function Sakhasomoho() {
         </div>
       </div>
 
-      {/*-----------Heading-----------*/}
-      <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 ">
+      {/*-----------বরিশাল-------শাখা-------*/}
+      <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
         {/*---------------Card-----------*/}
         {barishalBranch.map((data, idx) => (
           <div
@@ -507,21 +512,21 @@ function Sakhasomoho() {
               </h2>
               <div className="flex items-start py-6 px-3">
                 <div>
-                  <div className="flex items-center">
-                    <FaUserNurse className="text-2xl text-[#dd020c]" />
-                    <h3 className="text-xl text-[#3c3a3a] py-2 ml-2">
+                  <div className="flex">
+                    <FaUserNurse className="text-2xl mt-[5px] text-[#dd020c]" />
+                    <h3 className="text-md md:text-xl lg:text-xl text-[#3c3a3a] py-2 ml-2">
                       পরিচালক: {data.director}
                     </h3>
                   </div>
-                  <div className="flex items-center">
-                    <FaPhoneAlt className="text-2xl text-[#dd020c]" />
-                    <h4 className="text-xl text-[#3c3a3a] py-2 ml-2">
+                  <div className="flex">
+                    <FaPhoneAlt className="text-2xl mt-[5px] text-[#dd020c]" />
+                    <h4 className="text-md md:text-xl lg:text-xl text-[#3c3a3a] py-2 ml-2">
                       {data.phone}
                     </h4>
                   </div>
-                  <div className="flex items-center">
-                    <FaLocationDot className="text-2xl text-[#dd020c]" />
-                    <h4 className="text-xl text-[#3c3a3a] py-2 ml-2">
+                  <div className="flex">
+                    <FaLocationDot className="text-3xl mt-[5px] text-[#dd020c]" />
+                    <h4 className="text-md md:text-xl lg:text-xl text-[#3c3a3a] py-2 ml-2">
                       {data.location}
                     </h4>
                   </div>
@@ -561,8 +566,8 @@ function Sakhasomoho() {
         </div>
       </div>
 
-      {/*-----------Heading-----------*/}
-      <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 ">
+      {/*-----------সিলেট-------শাখা-------*/}
+      <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
         {/*---------------Card-----------*/}
         {sylhetBranch.map((data, idx) => (
           <div
@@ -575,21 +580,21 @@ function Sakhasomoho() {
               </h2>
               <div className="flex items-start py-6 px-3">
                 <div>
-                  <div className="flex items-center">
-                    <FaUserNurse className="text-2xl text-[#dd020c]" />
-                    <h3 className="text-xl text-[#3c3a3a] py-2 ml-2">
+                  <div className="flex">
+                    <FaUserNurse className="text-2xl mt-[5px] text-[#dd020c]" />
+                    <h3 className="text-md md:text-xl lg:text-xl text-[#3c3a3a] py-2 ml-2">
                       পরিচালক: {data.director}
                     </h3>
                   </div>
-                  <div className="flex items-center">
-                    <FaPhoneAlt className="text-2xl text-[#dd020c]" />
-                    <h4 className="text-xl text-[#3c3a3a] py-2 ml-2">
+                  <div className="flex">
+                    <FaPhoneAlt className="text-2xl mt-[5px] text-[#dd020c]" />
+                    <h4 className="text-md md:text-xl lg:text-xl text-[#3c3a3a] py-2 ml-2">
                       {data.phone}
                     </h4>
                   </div>
-                  <div className="flex items-center">
-                    <FaLocationDot className="text-2xl text-[#dd020c]" />
-                    <h4 className="text-xl text-[#3c3a3a] py-2 ml-2">
+                  <div className="flex">
+                    <FaLocationDot className="text-2xl mt-[5px] text-[#dd020c]" />
+                    <h4 className="text-md md:text-xl lg:text-xl text-[#3c3a3a] py-2 ml-2">
                       {data.location}
                     </h4>
                   </div>
@@ -629,8 +634,8 @@ function Sakhasomoho() {
         </div>
       </div>
 
-      {/*-----------Heading-----------*/}
-      <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 ">
+      {/*-----------ময়মনসিংহ-------শাখা-------*/}
+      <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
         {/*---------------Card-----------*/}
         {mymensinghBranch.map((data, idx) => (
           <div
@@ -643,21 +648,21 @@ function Sakhasomoho() {
               </h2>
               <div className="flex items-start py-6 px-3">
                 <div>
-                  <div className="flex items-center">
-                    <FaUserNurse className="text-2xl text-[#dd020c]" />
-                    <h3 className="text-xl text-[#3c3a3a] py-2 ml-2">
+                  <div className="flex">
+                    <FaUserNurse className="text-2xl mt-[5px] text-[#dd020c]" />
+                    <h3 className="text-md md:text-xl lg:text-xl text-[#3c3a3a] py-2 ml-2">
                       পরিচালক: {data.director}
                     </h3>
                   </div>
-                  <div className="flex items-center">
-                    <FaPhoneAlt className="text-2xl text-[#dd020c]" />
-                    <h4 className="text-xl text-[#3c3a3a] py-2 ml-2">
+                  <div className="flex">
+                    <FaPhoneAlt className="text-2xl mt-[5px] text-[#dd020c]" />
+                    <h4 className="text-md md:text-xl lg:text-xl text-[#3c3a3a] py-2 ml-2">
                       {data.phone}
                     </h4>
                   </div>
-                  <div className="flex items-center">
-                    <FaLocationDot className="text-2xl text-[#dd020c]" />
-                    <h4 className="text-xl text-[#3c3a3a] py-2 ml-2">
+                  <div className="flex">
+                    <FaLocationDot className="text-2xl mt-[5px] text-[#dd020c]" />
+                    <h4 className="text-md md:text-xl lg:text-xl text-[#3c3a3a] py-2 ml-2">
                       {data.location}
                     </h4>
                   </div>
@@ -697,8 +702,8 @@ function Sakhasomoho() {
         </div>
       </div>
 
-      {/*-----------Heading-----------*/}
-      <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 ">
+       {/*-----------রংপুর-------শাখা-------*/}
+      <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
         {/*---------------Card-----------*/}
         {rangpurBranch.map((data, idx) => (
           <div
@@ -711,21 +716,21 @@ function Sakhasomoho() {
               </h2>
               <div className="flex items-start py-6 px-3">
                 <div>
-                  <div className="flex items-center">
-                    <FaUserNurse className="text-2xl text-[#dd020c]" />
-                    <h3 className="text-xl text-[#3c3a3a] py-2 ml-2">
+                  <div className="flex">
+                    <FaUserNurse className="text-2xl mt-[5px] text-[#dd020c]" />
+                    <h3 className="text-md md:text-xl lg:text-xl text-[#3c3a3a] py-2 ml-2">
                       পরিচালক: {data.director}
                     </h3>
                   </div>
-                  <div className="flex items-center">
-                    <FaPhoneAlt className="text-2xl text-[#dd020c]" />
-                    <h4 className="text-xl text-[#3c3a3a] py-2 ml-2">
+                  <div className="flex">
+                    <FaPhoneAlt className="text-2xl mt-[5px] text-[#dd020c]" />
+                    <h4 className="text-md md:text-xl lg:text-xl text-[#3c3a3a] py-2 ml-2">
                       {data.phone}
                     </h4>
                   </div>
-                  <div className="flex items-center">
-                    <FaLocationDot className="text-2xl text-[#dd020c]" />
-                    <h4 className="text-xl text-[#3c3a3a] py-2 ml-2">
+                  <div className="flex">
+                    <FaLocationDot className="text-2xl mt-[5px] text-[#dd020c]" />
+                    <h4 className="text-md md:text-xl lg:text-xl text-[#3c3a3a] py-2 ml-2">
                       {data.location}
                     </h4>
                   </div>

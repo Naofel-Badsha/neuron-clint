@@ -12,14 +12,13 @@ const Corscard = ({ corse }) => {
   console.log(corse);
   return (
     <div
-      className="border bg-white border-gray-400 p-5 rounded-2xl shadow-md hover:shadow-xl hover:-translate-y-1 transition-transform transition-shadow duration-300 ease-in-out cursor-pointer "
+      className="border bg-white border-gray-400 p-3 rounded-2xl shadow-md hover:shadow-xl hover:-translate-y-1 transition-transform transition-shadow duration-300 ease-in-out cursor-pointer "
       data-aos="flip-right"
     >
       <div className="">
         <img
           src={corse?.image}
           className="h-48 object-cover rounded-2xl w-full "
-          alt=""
         />
       </div>
       <div className="">
@@ -31,7 +30,7 @@ const Corscard = ({ corse }) => {
 
         <div className="px-6 mt-3">
             {/*-----------*/}
-          <div className="flex  gap-1 font-medium">
+          <div className="flex gap-1 font-medium">
             <FaCheckCircle className="text-custom-bg mt-[1px]" /> 
             <p>বিষয়ভিত্তিক মোট ক্লাস: {corse?.motclass} টি</p>
           </div>
@@ -61,7 +60,7 @@ const Corscard = ({ corse }) => {
           </div>
         </div>
 
-        <div className=" mt-6 flex justify-around">
+        <div className="mt-6 mb-2 flex justify-around">
           <Link to={"/admition"}>
             <button className="text-xl font-semibold  px-6 h-12 pt-[6px]  bg-custom-bg text-white relative overflow-hidden group z-10 hover:text-white duration-1000 rounded-full">
               <span className="absolute bg-orange-700 size-32 rounded-full group-hover:scale-100 scale-0 -z-10 -left-2 -top-10 group-hover:duration-500 duration-700 origin-center transform transition-all"></span>
