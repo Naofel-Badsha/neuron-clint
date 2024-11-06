@@ -68,9 +68,9 @@ const Student = () => {
           1024: {
             slidesPerView: 3,
           },
-          1240: {
-            slidesPerView: 4,
-          },
+          // 1240: {
+          //   slidesPerView: 4,
+          // },
         }}
       >
         <div>

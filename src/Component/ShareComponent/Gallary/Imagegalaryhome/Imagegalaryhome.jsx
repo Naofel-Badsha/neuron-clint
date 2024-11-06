@@ -37,67 +37,69 @@ const Imagegalaryhome = () => {
   };
 
   return (
-    <div className="container m-auto py-10 mt-16 ">
-      {/*==============Heading================*/}
-      <div className="pb-10">
-        <h2 className="text-center text-5xl text-[#333333] font-bold mt-8">
-          ফটো<span className="text-custom-bg">গ্যালারি</span>
-        </h2>
-        <div className="flex w-20 m-auto">
-          <span className="w-10 h-[4px] bg-[#333333]"></span>
-          <span className="w-10 h-[4px] bg-custom-bg "></span>
-        </div>
-      </div>
-
-      <div>
-        {/* Filter Buttons */}
-        <div className="flex flex-wrap  gap-3 md:gap-6 py-10">
-          <button
-            className="px-4 md:px-5 pb-2 md:pb-4 pt-3 md:pt-5 text-white hover:text-white bg-slate-600  rounded-md hover:bg-custom-bg cursor-pointer focus:bg-[#ff4a4a] focus:text-white text-2xl"
-            onClick={() => setItems(Image)}
-          >
-            All
-          </button>
-          <button
-            className="px-4 md:px-5 pb-2 md:pb-4 pt-3 md:pt-5 text-white hover:text-white bg-slate-600  rounded-md hover:bg-custom-bg cursor-pointer focus:bg-[#ff4a4a] focus:text-white text-2xl"
-            onClick={() => filterItem("success")}
-          >
-            Success
-          </button>
-          <button
-            className="px-4 md:px-5 pb-2 md:pb-4 pt-3 md:pt-5 text-white hover:text-white bg-slate-600  rounded-md hover:bg-custom-bg cursor-pointer focus:bg-[#ff4a4a] focus:text-white text-2xl"
-            onClick={() => filterItem("campus")}
-          >
-            Campus
-          </button>
-          <button
-            className="px-4 md:px-5 pb-2 md:pb-4 pt-3 md:pt-5 text-white hover:text-white bg-slate-600  rounded-md hover:bg-custom-bg cursor-pointer focus:bg-[#ff4a4a] focus:text-white text-2xl"
-            onClick={() => filterItem("students")}
-          >
-            Students
-          </button>
-          <button
-            className="px-4 md:px-5 pb-2 md:pb-4 pt-3 md:pt-5 text-white hover:text-white bg-slate-600  rounded-md hover:bg-custom-bg cursor-pointer focus:bg-[#ff4a4a] focus:text-white text-2xl"
-            onClick={() => filterItem("others")}
-          >
-            Others
-          </button>
+    <div className="w-full bg-[#fef2f2] mt-16 px-2">
+      <div className="max-w-screen-xl mx-auto py-10 ">
+        {/*==============Heading================*/}
+        <div className="pb-10">
+          <h2 className="text-center text-3xl md:text-4xl lg:text-5xl text-[#333333] font-bold mt-8">
+            ফটো <span className="text-custom-bg">গ্যালারি</span>
+          </h2>
+          <div className="flex w-20 m-auto">
+            <span className="w-10 h-[4px] bg-[#333333]"></span>
+            <span className="w-10 h-[4px] bg-custom-bg "></span>
+          </div>
         </div>
 
-        {/* Image Gallery */}
-        <div className="grid gap-6 md:grid-cols-3 lg:grid-cols-4 px-2">
-          {items.slice(0, 12).map((item) => (
-            <ImageCard key={item.id} item={item} />
-          ))}
-        </div>
-
-        {/* See More Button */}
-        <div className="flex justify-center mt-6">
-          <Link to="/photogalary">
-            <button className="text-2xl text-white bg-custom-bg py-4 px-7 rounded-lg hover:bg-red-800 duration-150">
-              See More
+        {/*----------Filter----------Buttons----------*/}
+        <div>
+          <div className="flex gap-6 overflow-x-auto  mb-10">
+            <button
+              className="btn mb-2 text-white hover:text-white bg-slate-600  rounded-md hover:bg-custom-bg cursor-pointer focus:bg-[#ff4a4a] focus:text-white text-lg md:text-xl lg:text-2xl"
+              onClick={() => setItems(Image)}
+            >
+              All
             </button>
-          </Link>
+            <button
+              className="btn mb-2 text-white hover:text-white bg-slate-600  rounded-md hover:bg-custom-bg cursor-pointer focus:bg-[#ff4a4a] focus:text-white text-lg md:text-xl lg:text-2xl"
+              onClick={() => filterItem("success")}
+            >
+              Success
+            </button>
+            <button
+              className="btn mb-2 text-white hover:text-white bg-slate-600  rounded-md hover:bg-custom-bg cursor-pointer focus:bg-[#ff4a4a] focus:text-white text-lg md:text-xl lg:text-2xl"
+              onClick={() => filterItem("campus")}
+            >
+              Campus
+            </button>
+            <button
+              className="btn mb-2 text-white hover:text-white bg-slate-600  rounded-md hover:bg-custom-bg cursor-pointer focus:bg-[#ff4a4a] focus:text-white text-lg md:text-xl lg:text-2xl"
+              onClick={() => filterItem("students")}
+            >
+              Students
+            </button>
+            <button
+              className="btn mb-2 text-white hover:text-white bg-slate-600  rounded-md hover:bg-custom-bg cursor-pointer focus:bg-[#ff4a4a] focus:text-white text-lg md:text-xl lg:text-2xl"
+              onClick={() => filterItem("others")}
+            >
+              Others
+            </button>
+          </div>
+
+          {/* Image Gallery */}
+          <div className="grid gap-6 md:grid-cols-3 lg:grid-cols-4">
+            {items.slice(0, 12).map((item) => (
+              <ImageCard key={item.id} item={item} />
+            ))}
+          </div>
+
+          {/* See More Button */}
+          <div className="flex justify-center mt-6">
+            <Link to="/photogalary">
+              <button className="btn text-2xl text-white bg-custom-bg rounded-lg hover:bg-red-800 duration-150">
+                See More
+              </button>
+            </Link>
+          </div>
         </div>
       </div>
     </div>

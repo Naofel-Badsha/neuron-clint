@@ -26,7 +26,7 @@ const Footer = () => {
               </div>
             </div>
             {/*------Social------Icon------*/}
-            <div className="flex ml-16 gap-5 mt-7 ">
+            <div className="flex ml-0 md:ml-16 lg:ml-16 gap-5 mt-7 ">
               <a
                 className="relative w-10 h-10 rounded-full transition-all duration-500 flex justify-center items-center bg-[linear-gradient(45deg,#FEE411_6.9%,#FEDB16_10.98%,#FEC125_17.77%,#FE983D_26.42%,#FE5F5E_36.5%,#FE2181_46.24%,#9000DC_85.57%)]  hover:bg-gradient-to-b from-gray-900 to-gray-900"
               >

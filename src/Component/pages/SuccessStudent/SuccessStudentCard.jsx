@@ -1,12 +1,8 @@
-
-
 const SuccessStudentCard = ({ successStudent }) => {
-  const { image, name, story,institutions } = successStudent;
-
+  const { image, name, story, institutions } = successStudent;
 
   return (
-  
-    <div className=" bg-[#f1e8e8] border-2  p-6" >
+    <div className=" bg-[#f1e8e8] border-2  p-6">
       <div className="h-[300px] w-[300px] m-auto ">
         <img src={image} className=" h-[300px] object-cover" />
       </div>
@@ -17,8 +13,12 @@ const SuccessStudentCard = ({ successStudent }) => {
         </div>
         <div className="">
           <h2 className="card-title text-2xl text-custom-bg">{name}</h2>
-          <h2 className="card-title text-2xl text-black py-4">{institutions}</h2>
-          <p className="text-xl text-black  min-h-[196px] max-h-[196px] mb-7 overflow-hidden">{story}</p>
+          <h2 className="card-title text-xl md:text-2xl lg:text-3xl text-black py-4">
+            {institutions}
+          </h2>
+          <p className="text-md md:text-2xl lg:text-2xl text-black  min-h-[196px] max-h-[196px] mb-7 overflow-auto">
+            {story}
+          </p>
         </div>
         <div className="flex items-center justify-end">
           <i className="fa-solid fa-quote-right text-4xl text-custom-bg"></i>

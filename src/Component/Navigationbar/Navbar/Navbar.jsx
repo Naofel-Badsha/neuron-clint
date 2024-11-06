@@ -123,10 +123,10 @@ const Navbar = () => {
             <div className="flex justify-center items-center gap-2">
               <img src={Logo} className="w-[60px]" alt="Logo" />
               <div>
-                <p className="tracking-wider text-4xl font-bold bg-clip-text text-transparent bg-custom-bg">
+                <p className="tracking-wider text-2xl md:text-4xl lg:text-4xl font-bold bg-clip-text text-transparent bg-custom-bg">
                   NEURON
                 </p>
-                <p className="tracking-tight text-xs font-semibold">
+                <p className="tracking-tight hidden md:block text-xs font-semibold">
                   Nursing Admission Coaching
                 </p>
               </div>
@@ -135,7 +135,6 @@ const Navbar = () => {
         </div>
 
         {/* Drawer button */}
-        {/* xx:ml-7 xs:ml-20  mobile:ml-36 sm:ml-40  md:hidden */}
         <div className="block lg:hidden">
           <Button onClick={toggleDrawer(true)}>
             <GiHamburgerMenu className="text-3xl text-black" />
@@ -144,7 +143,7 @@ const Navbar = () => {
       </div>
 
       {/* Main navigation */}
-      <div className=" flex gap-4 ml-4">
+      <div className=" flex gap-4">
         <div className="hidden lg:flex">
           <ul className="flex font-semibold items-center">
             {/* Navigation Links for Desktop */}

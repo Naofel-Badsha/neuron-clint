@@ -29,13 +29,13 @@ const SuccessStudent = () => {
   });
 
   return (
-    <div className="px-3 md:mx-6 m-auto">
+    <div className="max-w-screen-xl mx-auto px-2 ">
       {/*-----------Heading-----------*/}
       <div className="py-10">
         {/*==============Heading================*/}
-        <div className="pb-10 mt-16">
-          <h2 className="text-center text-5xl text-[#333333] font-bold mt-8">
-            আমাদের<span className="text-custom-bg">সফলতার</span>গল্প
+        <div className="pb-10 mt-10">
+          <h2 className="text-center text-3xl md:text-4xl lg:text-5xl text-[#333333] font-bold mt-8">
+            আমাদের <span className="text-custom-bg"> সফলতার</span> গল্প
           </h2>
           <div className="flex w-20 m-auto">
             <span className="w-10 h-[4px] bg-[#333333]"></span>
@@ -49,7 +49,7 @@ const SuccessStudent = () => {
         spaceBetween={25}
         slidesPerView={1}
         autoplay={true}
-        grabCursor={true}
+        // grabCursor={true}
         delay={"100"}
         loop={true}
         className="mySwiper"

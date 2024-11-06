@@ -89,7 +89,7 @@ const router = createBrowserRouter([
       
       {
         path: "/AllCorsess",
-        element:<div className=""><AllCorsess></AllCorsess></div>,
+        element:<AllCorsess></AllCorsess>,
       },
       {
         path: "/Allbranch",

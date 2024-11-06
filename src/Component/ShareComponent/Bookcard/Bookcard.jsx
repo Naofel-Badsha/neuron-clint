@@ -27,7 +27,7 @@ const bookcard = ({ item }) => {
           <TbCurrencyTaka className="text-2xl" />
           {item.price}
         </div>
-        <div className=" flex justify-center items-center">
+        <div className="flex justify-center items-center mb-3">
           <Link to={`/book/view/${item._id}`}>
             <Button className="relative inline-flex items-center justify-center p-4 px-5 py-6 overflow-hidden font-medium text-custom-bg transition duration-300 ease-out rounded-full shadow-xl group hover:ring-1 hover:ring-purple-500">
               <span className="absolute inset-0 w-full h-full bg-gradient-to-br from-custom-bg via-purple-600 to-pink-700"></span>

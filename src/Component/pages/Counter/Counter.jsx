@@ -15,7 +15,7 @@ const Counter = () => {
   }, []);
 
   return (
-    <div className="max-w-screen-xl mx-auto px-2">
+    <div className="max-w-screen-xl mx-auto px-2 mt-10">
       <ScrollTrigger
         onEnter={() => setCounterOn(true)}
         onExit={() => setCounterOn(false)}

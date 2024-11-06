@@ -18,10 +18,10 @@ const VideogalleryHome = () => {
   });
 
   return (
-    <div className="container m-auto py-10">
+    <div className="max-w-screen-xl mx-auto py-10 px-2">
       {/*==============Heading================*/}
       <div className="pb-10 mb-10">
-        <h2 className="text-center text-5xl text-[#333333] font-bold mt-8">
+        <h2 className="text-center text-3xl md:text-4xl lg:text-5xl text-[#333333] font-bold mt-8">
           ভিডিও <span className="text-custom-bg">গ্যালারি</span>
         </h2>
         <div className="flex w-16 m-auto">
@@ -30,7 +30,7 @@ const VideogalleryHome = () => {
         </div>
       </div>
 
-      <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 px-2">
+      <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
         {videoData.slice(0, 6).map((item, index) => (
           <div key={index}>
             <div className="w-full h-[250px] border-2  ">
@@ -48,7 +48,7 @@ const VideogalleryHome = () => {
       </div>
       <div className="flex justify-center mt-6">
         <Link to="/vediogalary">
-          <button className="text-2xl text-white bg-custom-bg py-4 px-7 rounded-lg hover:bg-red-800 duration-150">
+          <button className="btn text-2xl text-white bg-custom-bg rounded-lg hover:bg-red-800 duration-150">
             See More
           </button>
         </Link>

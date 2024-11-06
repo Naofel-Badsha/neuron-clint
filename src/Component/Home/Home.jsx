@@ -34,40 +34,20 @@ const Home = () => {
       <div className="block md:hidden lg:hidden">
         <Slidersmall></Slidersmall>
       </div>
-
       <UccaAbout></UccaAbout>
       <Counter></Counter>
       <Corsehome></Corsehome>
       <Student></Student>
-
-
       {/* <Slider2></Slider2> */}
-
-      <div className="w-full bg-[#fef2f2]">
-        <div className="max-w-screen-xl mx-auto">
-          <Bookcontenarhome></Bookcontenarhome>
-        </div>
-      </div>
-
+      <Bookcontenarhome></Bookcontenarhome>
       <UccBanner></UccBanner>
-
-      <div className="max-w-screen-xl mx-auto">
-        <SuccessStudent></SuccessStudent>
-      </div>
-      <div className="w-full bg-[#fef2f2]">
-        <div className="max-w-screen-xl mx-auto">
-          <Imagegalaryhome></Imagegalaryhome>
-        </div>
-      </div>
-      <div className="max-w-screen-xl mx-auto">
-        <UniqueAllService></UniqueAllService>
-      </div>
-
-      <div className="max-w-screen-xl mx-auto">
-        <VideogalleryHome></VideogalleryHome>
+      <SuccessStudent></SuccessStudent>
+      <Imagegalaryhome></Imagegalaryhome>
+      <UniqueAllService></UniqueAllService>
+      <VideogalleryHome></VideogalleryHome>
 
         <Maps></Maps>
-      </div>
+
     </div>
   );
 };

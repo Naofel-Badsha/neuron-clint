@@ -85,7 +85,7 @@ const Corsehome = () => {
         </div>
         <div className="flex justify-center mt-6">
           <Link to="/AllCorsess">
-            <button className="text-2xl text-white bg-custom-bg py-2 md:py-4 px-4 md:px-7 rounded-lg hover:bg-red-800 duration-150">
+            <button className="btn text-2xl text-white bg-custom-bg rounded-lg hover:bg-red-800 duration-150">
               See More
             </button>
           </Link>
