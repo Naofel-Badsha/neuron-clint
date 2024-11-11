@@ -134,6 +134,7 @@ const router = createBrowserRouter([
       {
         path: "/UpdateContest/:id",  // Dynamic route to match user ID
         element:<UpdateContest></UpdateContest>,  // Component to display user details
+        loader: ({params}) => fetch(`http://localhost:7000/Add/corse/${params.id}`)
       }, 
     ],
     errorElement: <Error></Error>,

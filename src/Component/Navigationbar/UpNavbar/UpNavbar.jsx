@@ -11,19 +11,19 @@ const UpNavbar = () => {
   const [role, isLoading] = useRole();
   const { user, handleSignOut } = useAuth();
   return (
-    <div className=" bg-custom-bg  mb-4">
+    <div className=" bg-custom-bg">
       <div className="flex items-center justify-between flex-col lg:flex-row gap-3 max-w-screen-xl mx-auto py-3 text-white px-2">
         {/*----------Social-Media------Icon----------*/}
-        <div className="text-2xl flex gap-4 mx-3 items-center justify-center  ">
+        <div className="text-2xl flex gap-4 mx-3 items-center justify-center ">
           <a
             href="https://youtube.com/@neuronnursingcoaching-nnc9654"
             target="_blank"
-            className="hover:text-green-700"
+            className="hover:-translate-y-1 duration-200"
           >
             <IoLogoYoutube />
           </a>
 
-          <a href="" className="hover:text-green-700">
+          <a href="" className="hover:-translate-y-1 duration-200">
             {" "}
             <FaInstagram />
           </a>
@@ -31,16 +31,16 @@ const UpNavbar = () => {
           <a
             href="https://www.facebook.com/profile.php?id=100093095790723"
             target="_blank"
-            className="hover:text-green-700"
+            className="hover:-translate-y-1 duration-200"
           >
             <FaFacebook />
           </a>
 
-          <a href="" className="hover:text-green-700">
+          <a href="" className="hover:-translate-y-1 duration-200">
             {" "}
             <FaLinkedin />
           </a>
-          <a href="" className="hover:text-green-700">
+          <a href="" className="hover:-translate-y-1 duration-200">
             {" "}
             <FaTiktok />
           </a>

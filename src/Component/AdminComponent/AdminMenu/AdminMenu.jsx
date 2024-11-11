@@ -15,183 +15,191 @@ const AdminMenu = () => {
   const { handleSignOut } = useAuth();
   return (
     <div className="flex">
-      {/* dashboard side bar */}
+      {/*-----dashboard-----side-----bar-----*/}
       <div className="w-64 min-h-screen bg-gray-300">
         <ul className="menu p-4">
+          {/*-----------Navlink-------1-------*/}
           <li>
-            <NavLink to="/dashboard/ManageUser">
+            <NavLink className="text-xl"  to="/dashboard/ManageUser">
               <FaUsers className="text-3xl" />
               Manage User
             </NavLink>
           </li>
+          {/*-----------Navlink-------2-------*/}
           <div className="divider my-5"></div>
           <li>
-            <NavLink to="/dashboard/AddContest">
+            <NavLink className="text-xl" to="/dashboard/AddContest">
               <MdMenuBook className="text-3xl" />
               Add Courses{" "}
             </NavLink>
           </li>
+          {/*-----------Navlink-------3-------*/}
           <li>
-            <NavLink to="/dashboard/Managecurse">
+            <NavLink className="text-xl mt-5" to="/dashboard/Managecurse">
               <MdMenuBook className="text-3xl" />
-              Managecurse{" "}
+              Manage Curse{" "}
             </NavLink>
           </li>
           <div className="divider my-5"></div>
+          {/*-----------Navlink-------4-------*/}
           <li>
-            <NavLink to="/dashboard/Slidersimg">
+            <NavLink className="text-xl" to="/dashboard/Slidersimg">
               <FaRegImages className="text-3xl" />
-              Slidersimg{" "}
+              Sliders Img{" "}
             </NavLink>
           </li>
-
+          {/*-----------Navlink-------5-------*/}
           <li>
-            <NavLink to="/dashboard/Slidersimgsmoll">
+            <NavLink className="text-xl mt-5" to="/dashboard/Slidersimgsmoll">
               <FaFileImage className="text-3xl" />
-              Slidersimg smoll{" "}
+              Slidersimg Smoll{" "}
             </NavLink>
           </li>
-
+          {/*-----------Navlink-------5-------*/}
           <div className="divider my-5"></div>
-
+          {/*-----------Navlink-------6-------*/}
           <li>
-            <NavLink to="/dashboard/Addbook">
+            <NavLink className="text-xl" to="/dashboard/Addbook">
               <ImBook className="text-3xl" />
               Add book{" "}
             </NavLink>
           </li>
-
+          {/*-----------Navlink-------7-------*/}
           <li>
-            <NavLink to="/dashboard/ManageBook">
+            <NavLink className="text-xl mt-5" to="/dashboard/ManageBook">
               <ImBook className="text-3xl" />
               Manage Book{" "}
             </NavLink>
           </li>
-
           <div className="divider my-5"></div>
-
+          {/*-----------Navlink-------8-------*/}
           <li>
-            <NavLink to="/dashboard/AddSuccessfulstudents">
+            <NavLink className="text-xl" to="/dashboard/AddSuccessfulstudents">
               <PiStudentBold className="text-3xl" />
-              Add Successfulstudents{" "}
+              Add Success Students{" "}
             </NavLink>
           </li>
-
+          {/*-----------Navlink-------9-------*/}
           <li>
-            <NavLink to="/dashboard/ManageSuccessfulstudents">
+            <NavLink className="text-xl mt-5" to="/dashboard/ManageSuccessfulstudents">
               <PiStudentBold className="text-3xl" />
-              Manage Successfulstudents{" "}
+              Manage Success Students{" "}
             </NavLink>
           </li>
-
           <div className="divider my-5"></div>
-
+          {/*-----------Navlink-------10-------*/}
           <li>
-            <NavLink to="/dashboard/AddImage">
+            <NavLink className="text-xl" to="/dashboard/AddImage">
               <FaRegImage className="text-3xl" />
               Add Image{" "}
             </NavLink>
           </li>
-
+          {/*-----------Navlink-------11-------*/}
           <li>
-            <NavLink to="/dashboard/ManageImage">
+            <NavLink className="text-xl mt-5" to="/dashboard/ManageImage">
               <FaRegImage className="text-3xl" />
               Manage Image{" "}
             </NavLink>
           </li>
-
           <div className="divider my-5"></div>
-
+          {/*-----------Navlink-------12-------*/}
           <li>
-            <NavLink to="/dashboard/AddVedio">
+            <NavLink className="text-xl" to="/dashboard/AddVedio">
               <FaYoutube className="text-3xl" />
               Add Vedio{" "}
             </NavLink>
           </li>
-
+          {/*-----------Navlink-------13-------*/}
           <li>
-            <NavLink to="/dashboard/ManageVedio">
+            <NavLink className="text-xl mt-5" to="/dashboard/ManageVedio">
               <FaYoutube className="text-3xl" />
               Manage Vedio{" "}
             </NavLink>
           </li>
           <div className="divider my-5"></div>
+          {/*-----------Navlink-------14-------*/}
           <li>
-            <NavLink to="/dashboard/AddHeadline">
+            <NavLink className="text-xl" to="/dashboard/AddHeadline">
               <FaTextWidth className="text-3xl" />
               Add Headline{" "}
             </NavLink>
           </li>
+          {/*-----------Navlink-------15-------*/}
           <li>
-            <NavLink to="/dashboard/ManageHeadline">
+            <NavLink className="text-xl mt-5" to="/dashboard/ManageHeadline">
               <FaTextWidth className="text-3xl" />
               Manage Headline{" "}
             </NavLink>
           </li>
-
           <div className="divider my-5"></div>
+          {/*-----------Navlink-------16-------*/}
           <li>
-            <NavLink to="/dashboard/AdmitionRequest">
+            <NavLink className="text-xl" to="/dashboard/AdmitionRequest">
               <FaUniversity className="text-3xl" />
               Admition Request{" "}
             </NavLink>
           </li>
+          {/*-----------Navlink-------17-------*/}
           <li>
-            <NavLink to="/dashboard/AdmitionComplete">
+            <NavLink className="text-xl mt-5" to="/dashboard/AdmitionComplete">
               <FaUniversity className="text-3xl" />
               Admition Complete{" "}
             </NavLink>
           </li>
-
           <div className="divider my-5"></div>
+          {/*-----------Navlink-------18-------*/}
           <li>
-            <NavLink to="/dashboard/BookbuyRequest">
+            <NavLink className="text-xl" to="/dashboard/BookbuyRequest">
               <GrBook className="text-3xl" />
               Bookbuy Request
             </NavLink>
           </li>
+          {/*-----------Navlink-------19-------*/}
           <li>
-            <NavLink to="/dashboard/BookbuyComplate">
+            <NavLink className="text-xl mt-5" to="/dashboard/BookbuyComplate">
               <GrBook className="text-3xl" />
               Bookbuy Complate{" "}
             </NavLink>
           </li>
-
           <div className="divider my-5"></div>
+          {/*-----------Navlink-------20-------*/}
           <li>
-            <NavLink to="/dashboard/AddSuccessStory">
+            <NavLink className="text-xl" to="/dashboard/AddSuccessStory">
               <FaGraduationCap className="text-3xl" />
-              AddSuccess Story
+              Add Success Story
             </NavLink>
           </li>
+          {/*-----------Navlink-------21-------*/}
           <li>
-            <NavLink to="/dashboard/ManageSuccessStory">
+            <NavLink className="text-xl mt-5" to="/dashboard/ManageSuccessStory">
               <FaGraduationCap className="text-3xl" />
               Manage SuccessStory{" "}
             </NavLink>
           </li>
-
           <div className="divider my-5"></div>
+          {/*-----------Navlink-------22-------*/}
           <li>
-            <NavLink to="/dashboard/AddBranch">
+            <NavLink className="text-xl" to="/dashboard/AddBranch">
               <FaGraduationCap className="text-3xl" />
               Add Branch
             </NavLink>
           </li>
+          {/*-----------Navlink-------23-------*/}
           <li>
-            <NavLink to="/dashboard/ManageBranch">
+            <NavLink className="text-xl mt-5" to="/dashboard/ManageBranch">
               <FaGraduationCap className="text-3xl" />
               Manage Branch{" "}
             </NavLink>
           </li>
-
           <div className="divider mb-48"></div>
+          {/*-----------Navlink-------24-------*/}
           <li>
-            <NavLink to="/">
+            <NavLink className="text-xl" to="/">
               <FaHouseMedical className="text-3xl"></FaHouseMedical>
               Home
             </NavLink>
           </li>
+          {/*-----------Navlink-------25-------*/}
           <li>
             <div className="">
               {" "}

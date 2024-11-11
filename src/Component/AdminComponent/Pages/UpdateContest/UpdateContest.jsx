@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { useParams } from 'react-router-dom';
+import { useLoaderData, useParams } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import useAxiosCommon from '../../../hooks/useAxiosCommon';
@@ -8,6 +8,7 @@ import axios from 'axios';
 import { data } from 'autoprefixer';
 
 const UpdateContest = () => {
+  const {corsename} = useLoaderData()
   const [formData, setFormData] = useState({
     corsename: '',
     coachprice: '',
@@ -141,6 +142,7 @@ const UpdateContest = () => {
             <input
               type="text"
               name="corsename"
+              // defaultValue={corsename}
               value={formData.corsename}
               onChange={handleChange}
               className="w-full p-2 border border-gray-300 rounded"

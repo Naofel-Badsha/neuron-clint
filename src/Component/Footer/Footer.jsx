@@ -111,12 +111,13 @@ const Footer = () => {
         <div className="py-7 border-t border-gray-200 px-2">
           <div className="flex items-center justify-center flex-col lg:justify-between lg:flex-row">
             <span className="text-sm text-white ">
-              <div className="flex">
-                <p>&copy; 1998 NEURON All rights reserved.</p>
+              <div className="flex gap-2">
+                <p>&copy; 1998 NEURON All rights reserved. </p>
                 <p>
-                  Developed by
-                  <a href="https://web.facebook.com/fred.jh.31" target="_blank">
-                    Zobayer & Naofel
+                  Developed <br></br>
+                   <a href="https://web.facebook.com/fred.jh.31" target="_blank" 
+                   className="right-1">
+                   Back: Zobayer & Front: Naofel
                   </a>
                 </p>
               </div>

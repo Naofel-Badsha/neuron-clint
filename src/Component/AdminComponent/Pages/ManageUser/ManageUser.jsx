@@ -130,7 +130,7 @@ const ManageUser = () => {
                 </td>
                 <td className="py-4 px-6 border-b">
                   <button className="btn btn-error" onClick={() => openModal(user._id)}>
-                    <RiDeleteBin6Line className="text-xl" /> Delete
+                    <RiDeleteBin6Line className="text-2xl text-white" /> 
                   </button>
                 </td>
               </tr>
