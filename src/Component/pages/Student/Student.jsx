@@ -32,12 +32,12 @@ const Student = () => {
   });
 
   return (
-    <div className="max-w-screen-xl mx-auto mb-10 px-2">
+    <div className="max-w-screen-xl mx-auto px-2 py-16">
       {/*-----------Heading-----------*/}
-      <div className="py-6">
+      <div className="">
         {/*==============Heading================*/}
-        <div className="pb-10 mt-16">
-          <h2 className="text-center text-3xl md:text-4xl lg:text-5xl text-[#333333] font-bold mt-8">
+        <div className="">
+          <h2 className="text-center text-3xl md:text-4xl lg:text-5xl text-[#333333] font-bold">
             আমাদের <span className="text-custom-bg"> সাফল্য </span>গাঁথা
           </h2>
           <div className="flex w-20 m-auto">
@@ -45,19 +45,17 @@ const Student = () => {
             <span className="w-10 h-[4px] bg-custom-bg "></span>
           </div>
         </div>
-      </div>
 
-      <Swiper
+        <Swiper
         //   Autoplay,
         modules={[Autoplay, Navigation]}
         spaceBetween={25}
         slidesPerView={1}
         autoplay={true}
-        grabCursor={true}
         navigation={true}
         delay={"100"}
         loop={true}
-        className="mySwiper Navigation"
+        className="mySwiper Navigation "
         breakpoints={{
           640: {
             slidesPerView: 1,
@@ -82,6 +80,10 @@ const Student = () => {
           ))}
         </div>
       </Swiper>
+
+      </div>
+
+
     </div>
   );
 };

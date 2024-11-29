@@ -47,27 +47,27 @@ const Bookcontenar = () => {
       </div>
 
       <div>
-        <div className="flex gap-6 mt-16 mb-6 overflow-x-auto">
+        <div className="flex items-center justify-center gap-6 mt-16 mb-6 overflow-x-auto">
           <button
-            className="btn mb-2 text-black hover:text-white bg-slate-200 hover:bg-slate-700 cursor-pointer focus:bg-[#ff4a4a] focus:text-white rounded-md text-lg md:text-xl lg:text-2xl"
+            className="btn mb-2 text-white hover:text-white bg-slate-600 rounded-md hover:bg-custom-bg cursor-pointer focus:bg-[#ff4a4a] focus:text-white text-lg md:text-xl lg:text-2xl"
             onClick={() => setItems(Image)}
           >
             সব
           </button>
           <button
-            className="btn mb-2 text-black hover:text-white bg-slate-200 hover:bg-slate-700 cursor-pointer focus:bg-[#ff4a4a] focus:text-white text-lg md:text-xl lg:text-2xl rounded-xl"
+            className="btn mb-2 text-white hover:text-white bg-slate-600 rounded-md hover:bg-custom-bg cursor-pointer focus:bg-[#ff4a4a] focus:text-white text-lg md:text-xl lg:text-2xl"
             onClick={() => filterItem("akadami")}
           >
             একাডেমিক বই
           </button>
           <button
-            className="btn mb-2 text-black hover:text-white bg-slate-200 hover:bg-slate-700 cursor-pointer focus:bg-[#ff4a4a] focus:text-white rounded-md text-lg md:text-xl lg:text-2xl"
+            className="btn mb-2 text-white hover:text-white bg-slate-600 rounded-md hover:bg-custom-bg cursor-pointer focus:bg-[#ff4a4a] focus:text-white text-lg md:text-xl lg:text-2xl"
             onClick={() => filterItem("niyog")}
           >
             নিয়োগ বই
           </button>
           <button
-            className="btn mb-2 text-black hover:text-white bg-slate-200 hover:bg-slate-700 cursor-pointer focus:bg-[#ff4a4a] focus:text-white rounded-md text-lg md:text-xl lg:text-2xl"
+            className="btn mb-2 text-white hover:text-white bg-slate-600 rounded-md hover:bg-custom-bg cursor-pointer focus:bg-[#ff4a4a] focus:text-white text-lg md:text-xl lg:text-2xl"
             onClick={() => filterItem("admission")}
           >
             এডমিশন বই

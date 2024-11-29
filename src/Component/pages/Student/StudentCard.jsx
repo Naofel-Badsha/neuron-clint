@@ -8,14 +8,14 @@ const StudentCard = ({ student }) => {
     AOS.init({ duration: 1000 }); // Initialize AOS with animation duration
   }, []);
   return (
-    <div className="shadow-xl border-2 h-full rounded-xl" data-aos="zoom-in">
-      <div className="py-2">
+    <div className="shadow-xl border-2 w-full h-full rounded-xl p-6 mt-16 " data-aos="zoom-in">
+      <div className="">
         <img
           src={image}
-          className="w-full h-[350px] sm:w-full sm:h-full m-auto px-2 rounded-xl object-cover"
+          className="w-full h-[350px] sm:w-full sm:h-full m-auto rounded-xl object-cover"
         />
       </div>
-      <div className="px-4 py-5 sm:text-center md:items-center lg:text-start">
+      <div className=" py-6 sm:text-center md:items-center lg:text-start">
         <h2 className=" text-2xl text-custom-bg font-bold">{name}</h2>
         <p className="text-black py-2 text-xl md:text-2xl lg:text-2xl font-bold">
           {Secession}

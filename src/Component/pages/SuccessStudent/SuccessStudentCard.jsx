@@ -2,7 +2,7 @@ const SuccessStudentCard = ({ successStudent }) => {
   const { image, name, story, institutions } = successStudent;
 
   return (
-    <div className=" bg-[#f1e8e8] border-2  p-6">
+    <div className=" bg-[#f1e8e8] border-2 mt-10 p-6">
       <div className="h-[300px] w-[300px] m-auto ">
         <img src={image} className=" h-[300px] object-cover" />
       </div>

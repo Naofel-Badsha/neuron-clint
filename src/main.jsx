@@ -101,15 +101,15 @@ const router = createBrowserRouter([
       },
       {
         path: "/photogalary",
-        element:<div className="max-w-screen-xl mx-auto"><ImagesGallery></ImagesGallery></div>,
+        element:<ImagesGallery></ImagesGallery>,
       },
       {
         path: "/vediogalary",
-        element: <div className="max-w-screen-xl mx-auto"><VideoGallery></VideoGallery></div>,
+        element: <VideoGallery></VideoGallery>,
       },
       {
         path: "/AboutUs",
-        element: <div className="max-w-screen-xl mx-auto"><AboutUs></AboutUs></div>,
+        element: <AboutUs></AboutUs>,
       },
       {
         path: "/admition",

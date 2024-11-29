@@ -11,8 +11,8 @@ const UpNavbar = () => {
   const [role, isLoading] = useRole();
   const { user, handleSignOut } = useAuth();
   return (
-    <div className=" bg-custom-bg">
-      <div className="flex items-center justify-between flex-col lg:flex-row gap-3 max-w-screen-xl mx-auto py-3 text-white px-2">
+    <div className="bg-custom-bg">
+      <div className="flex items-center justify-between flex-col lg:flex-row gap-3 max-w-screen-xl mx-auto py-4 text-white px-2">
         {/*----------Social-Media------Icon----------*/}
         <div className="text-2xl flex gap-4 mx-3 items-center justify-center ">
           <a

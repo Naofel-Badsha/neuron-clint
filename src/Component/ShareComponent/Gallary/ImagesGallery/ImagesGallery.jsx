@@ -53,7 +53,7 @@ const ImagesGallery = () => {
       <div>
         {/*---------Filter---------Buttons---------*/}
         {/* flex-wrap gap-2 md:gap-6 lg:gap-6 */}
-        <div className="flex gap-6 overflow-x-auto mt-5 mb-10">
+        <div className="flex items-center justify-center gap-6 overflow-x-auto mt-5 mb-10">
           <button
             className="btn mb-2 text-white hover:text-white bg-slate-600 rounded-md hover:bg-custom-bg cursor-pointer focus:bg-[#ff4a4a] focus:text-white text-lg md:text-xl lg:text-2xl"
             onClick={() => setItems(Image)}

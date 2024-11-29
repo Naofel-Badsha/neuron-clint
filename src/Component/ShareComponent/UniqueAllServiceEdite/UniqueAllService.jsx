@@ -8,10 +8,10 @@ const UniqueAllService = () => {
   }, []);
 
   return (
-    <div className="max-w-screen-xl mx-auto py-10">
+    <div className="max-w-screen-xl mx-auto py-16">
       {/*==============Heading================*/}
-      <div className="pb-10 mb-10">
-        <h2 className="text-center text-3xl md:text-4xl lg:text-5xl px-1 text-[#333333] font-bold mt-8">
+      <div className="">
+        <h2 className="text-center text-3xl md:text-4xl lg:text-5xl px-1 text-[#333333] font-bold ">
           অনন্য সব <span className="text-custom-bg">সেবা পরিক্রমা</span>
         </h2>
         <div className="flex w-16 m-auto">
@@ -20,7 +20,7 @@ const UniqueAllService = () => {
         </div>
       </div>
       <div className="px-2">
-        <div className="grid gap-8 md:grid-cols-1 lg:grid-cols-4">
+        <div className="grid gap-8 md:grid-cols-1 lg:grid-cols-4 mt-10">
           {/*-----------1-------------*/}
           <div
             className="rounded-[30px] bg-[#f9f1f1] py-10 hover:-translate-y-2 duration-150 shadow-sm hover:shadow-lg shadow-custom-bg"

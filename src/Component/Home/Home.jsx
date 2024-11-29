@@ -45,9 +45,7 @@ const Home = () => {
       <Imagegalaryhome></Imagegalaryhome>
       <UniqueAllService></UniqueAllService>
       <VideogalleryHome></VideogalleryHome>
-
         <Maps></Maps>
-
     </div>
   );
 };

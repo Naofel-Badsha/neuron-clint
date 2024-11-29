@@ -294,7 +294,6 @@ const Registration = () => {
           <Link to="/login" className="underline text-custom-bg">
             Login
           </Link>
-          .
         </p>
       </div>
     </div>

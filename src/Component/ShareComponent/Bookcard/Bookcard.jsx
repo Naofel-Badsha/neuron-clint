@@ -1,4 +1,4 @@
-import { Button } from "antd";
+
 import { TbCurrencyTaka } from "react-icons/tb";
 import { Link } from "react-router-dom";
 import "aos/dist/aos.css"; // Import AOS styles
@@ -12,7 +12,7 @@ const bookcard = ({ item }) => {
 
   return (
     <div
-      className="mt-2 border-2 border-gray-400 bg-white p-4 shadow-xl rounded-xl"
+      className="mt-2 border-2 border-gray-400 bg-white p-6 shadow-xl rounded-xl"
       data-aos="slide-up"
     >
       <div className="w-full h-72">
@@ -29,11 +29,9 @@ const bookcard = ({ item }) => {
         </div>
         <div className="flex justify-center items-center mb-3">
           <Link to={`/book/view/${item._id}`}>
-            <Button className="relative inline-flex items-center justify-center p-4 px-5 py-6 overflow-hidden font-medium text-custom-bg transition duration-300 ease-out rounded-full shadow-xl group hover:ring-1 hover:ring-purple-500">
-              <span className="absolute inset-0 w-full h-full bg-gradient-to-br from-custom-bg via-purple-600 to-pink-700"></span>
-              <span className="absolute bottom-0 right-0 block w-64 h-64 mb-32 mr-4 transition duration-500 origin-bottom-left transform rotate-45 translate-x-24 bg-pink-500 rounded-full opacity-30 group-hover:rotate-90 ease"></span>
-              <span className="relative text-white">BUY NOW</span>
-            </Button>
+                <button className="btn text-2xl px-8 py-2 text-white bg-custom-bg rounded-lg hover:bg-red-800 duration-150">
+                Buy Now
+              </button>
           </Link>
         </div>
       </div>

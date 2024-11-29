@@ -29,12 +29,12 @@ const SuccessStudent = () => {
   });
 
   return (
-    <div className="max-w-screen-xl mx-auto px-2 ">
+    <div className="max-w-screen-xl mx-auto px-2">
       {/*-----------Heading-----------*/}
-      <div className="py-10">
+      <div className="">
         {/*==============Heading================*/}
-        <div className="pb-10 mt-10">
-          <h2 className="text-center text-3xl md:text-4xl lg:text-5xl text-[#333333] font-bold mt-8">
+        <div className="">
+          <h2 className="text-center text-3xl md:text-4xl lg:text-5xl text-[#333333] font-bold ">
             আমাদের <span className="text-custom-bg"> সফলতার</span> গল্প
           </h2>
           <div className="flex w-20 m-auto">

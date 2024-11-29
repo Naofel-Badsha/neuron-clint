@@ -18,8 +18,8 @@ const Headline = () => {
 
   // Assuming the data is an array of objects, and each object has a "Headline" property
   return (
-    <div className="bg-gray-100 flex justify-center mb-4">
-      <marquee className="font-medium px-10 py-2 rounded-full bg-gray-100 mt-2 text-gray-700 max-w-screen-xl mx-auto min-h-1">
+    <div className="bg-gray-100 flex justify-center my-4">
+      <marquee className="font-medium text-lg px-10 py-4 rounded-full bg-gray-100  text-gray-700 max-w-screen-xl mx-auto ">
         {data.map((item, index) => (
           <span key={index}>
             {item.Headline} {index < data.length - 1 && " | "}

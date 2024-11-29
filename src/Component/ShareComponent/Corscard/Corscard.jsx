@@ -12,7 +12,7 @@ const Corscard = ({ corse }) => {
   console.log(corse);
   return (
     <div
-      className="border bg-white border-gray-400 p-3 rounded-2xl shadow-md hover:shadow-xl hover:-translate-y-1 transition-transform transition-shadow duration-300 ease-in-out cursor-pointer "
+      className="border bg-white border-gray-400 p-6 rounded-2xl shadow-md hover:shadow-xl hover:-translate-y-1 transition-shadow duration-300 ease-in-out"
       data-aos="flip-right"
     >
       <div className="">
@@ -22,13 +22,13 @@ const Corscard = ({ corse }) => {
         />
       </div>
       <div className="">
-        <h3 className="font-extrabold text-xl mt-5">{corse?.corsename}</h3>
-        <div className="font-extrabold text-lg mt-2 flex items-center ">
+        <h3 className="font-extrabold text-xl mt-8">{corse?.corsename}</h3>
+        <div className="font-extrabold text-lg mt-3 flex items-center ">
           কোর্স ফি : <TbCurrencyTaka className="text-2xl" /> {corse?.coachprice}{" "}
           টাকা{" "}
         </div>
 
-        <div className="px-6 mt-3">
+        <div className=" mt-3">
             {/*-----------*/}
           <div className="flex gap-1 font-medium">
             <FaCheckCircle className="text-custom-bg mt-[1px]" /> 

@@ -64,12 +64,12 @@ const Corsehome = () => {
   }
 
   return (
-    <div className="w-full bg-[#fef2f2] mt-10 py-10">
+    <div className="w-full bg-[#fef2f2] mt-16 py-16">
       <div className="max-w-screen-xl mx-auto px-2">
-        <div className="pt-5 pb-5">
+        <div className="">
           {/*==============Heading================*/}
           <div className="pb-10 ">
-            <h2 className="text-center text-3xl md:text-4xl lg:text-5xl text-[#333333] font-bold mt-8">
+            <h2 className="text-center text-3xl md:text-4xl lg:text-5xl text-[#333333] font-bold ">
               আমাদের <span className="text-custom-bg">কোর্স সমূহ</span>
             </h2>
             <div className="flex w-20 m-auto">
@@ -78,14 +78,14 @@ const Corsehome = () => {
             </div>
           </div>
         </div>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 ">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
           {data.slice(0, 6).map((corse, idx) => (
             <Corscard key={idx} corse={corse}></Corscard>
           ))}
         </div>
-        <div className="flex justify-center mt-6">
+        <div className="flex justify-center mt-10">
           <Link to="/AllCorsess">
-            <button className="btn text-2xl text-white bg-custom-bg rounded-lg hover:bg-red-800 duration-150">
+            <button className="btn text-2xl px-8 py-2 text-white bg-custom-bg rounded-lg hover:bg-red-800 duration-150">
               See More
             </button>
           </Link>

@@ -10,7 +10,7 @@ const UccAbout = () => {
     AOS.init({ duration: 2000 }); // Initialize AOS with animation duration
   }, []);
   return (
-    <div className="max-w-screen-xl mx-auto mt-6 px-2">
+    <div className="max-w-screen-xl mx-auto px-2 mt-16">
       {/*-----------UccAbout-------Main-----Content--------*/}
       <div className="hero">
         <div className="flex items-center justify-between gap-16 flex-col lg:flex-row">
@@ -30,7 +30,7 @@ const UccAbout = () => {
               </p>
               <div>
                 <Link to="/AboutUs">
-                  <button className="btn text-2xl text-white bg-custom-bg rounded-lg hover:bg-red-800 duration-150">
+                  <button className="btn text-2xl px-8 py-2 text-white bg-custom-bg rounded-lg hover:bg-red-800 duration-150">
                     আরও পড়ুন
                   </button>
                 </Link>

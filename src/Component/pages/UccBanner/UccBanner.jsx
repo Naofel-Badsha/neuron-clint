@@ -7,8 +7,8 @@ const UccBanner = () => {
     AOS.init({ duration: 2000 }); // Initialize AOS with animation duration
   }, []);
   return (
-    <div className="m-auto">
-      <div className="carousel-item relative w-full mt-10">
+    <div className="m-auto py-16 ">
+      <div className="carousel-item relative w-full">
         <img
           src={Benar}
           className="w-full h-[400px] object-cover"
